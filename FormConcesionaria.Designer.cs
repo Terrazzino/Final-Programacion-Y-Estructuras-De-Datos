@@ -1,6 +1,6 @@
 ﻿namespace tpFinal
 {
-    partial class FormEmpresa
+    partial class FormConcesionaria
     {
         /// <summary>
         /// Required designer variable.
@@ -156,7 +156,7 @@
             Column3.Name = "Column3";
             Column3.Width = 125;
             // 
-            // FormEmpresa
+            // FormConcesionaria
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -171,8 +171,8 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "FormEmpresa";
-            Text = "FormEmpresa";
+            Name = "FormConcesionaria";
+            Text = "Form Concesionaria";
             ((System.ComponentModel.ISupportInitialize)nudCantidadPedidos).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvConcesionariaPedidos).EndInit();
             ResumeLayout(false);

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace tpFinal
 {
-    public partial class FormConcecionaria : Form
+    public partial class FormConcesionaria : Form
     {
-        public FormConcecionaria()
+        public FormConcesionaria()
         {
             InitializeComponent();
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

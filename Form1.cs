@@ -9,14 +9,14 @@ namespace tpFinal
 
         private void btnConcesionaria_Click(object sender, EventArgs e)
         {
-            FormEmpresa empresa = new FormEmpresa();
-            empresa.Show();
+            FormConcesionaria concecionaria = new FormConcesionaria();
+            concecionaria.Show();
         }
 
         private void btnEmpresa_Click(object sender, EventArgs e)
         {
-            FormConcecionaria concecionaria = new FormConcecionaria();
-            concecionaria.Show();
+            FormConcecionaria empresa = new FormConcecionaria();
+            empresa.Show();
         }
     }
 }

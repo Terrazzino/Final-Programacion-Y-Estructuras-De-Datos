@@ -492,7 +492,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "FormConcecionaria";
-            Text = "FormConcecionaria";
+            Text = "Form Empresa";
             ((System.ComponentModel.ISupportInitialize)dgvTerminadosEmpresa).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudStockTerminado).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvPiezasEmpresa).EndInit();
