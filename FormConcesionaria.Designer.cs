@@ -38,9 +38,6 @@
             btnBajaPedidos = new Button();
             btnModificarPeddidos = new Button();
             dgvConcesionariaPedidos = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)nudCantidadPedidos).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvConcesionariaPedidos).BeginInit();
             SuspendLayout();
@@ -109,7 +106,7 @@
             btnAltaPedidos.TabIndex = 6;
             btnAltaPedidos.Text = "Alta";
             btnAltaPedidos.UseVisualStyleBackColor = true;
-           
+            btnAltaPedidos.Click += btnAltaPedidos_Click;
             // 
             // btnBajaPedidos
             // 
@@ -134,7 +131,6 @@
             // dgvConcesionariaPedidos
             // 
             dgvConcesionariaPedidos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvConcesionariaPedidos.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
             dgvConcesionariaPedidos.Location = new Point(290, 27);
             dgvConcesionariaPedidos.Margin = new Padding(3, 2, 3, 2);
             dgvConcesionariaPedidos.Name = "dgvConcesionariaPedidos";
@@ -142,27 +138,6 @@
             dgvConcesionariaPedidos.RowTemplate.Height = 29;
             dgvConcesionariaPedidos.Size = new Size(374, 120);
             dgvConcesionariaPedidos.TabIndex = 9;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Modelo";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Concesionaria";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Cantidad";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.Width = 125;
             // 
             // FormConcesionaria
             // 
@@ -200,8 +175,5 @@
         private Button btnBajaPedidos;
         private Button btnModificarPeddidos;
         private DataGridView dgvConcesionariaPedidos;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
     }
 }
