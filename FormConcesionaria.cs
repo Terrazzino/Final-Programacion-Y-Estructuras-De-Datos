@@ -14,6 +14,7 @@ namespace tpFinal
     {
 
         GestorConcesionaria gestorConcesionaria;
+        int seleccionado = 0;
         public FormConcesionaria()
         {
             InitializeComponent();
@@ -37,6 +38,21 @@ namespace tpFinal
         {
             this.dgvConcesionariaPedidos.DataSource = null;
             this.dgvConcesionariaPedidos.DataSource = gestorConcesionaria.leerConcesionarias();
+        }
+
+        private void dgvConcesionariaPedidos_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            seleccionado = e.RowIndex;
+        }
+
+        private void btnBajaPedidos_Click_1(object sender, EventArgs e)
+        {
+            if (seleccionado != -1)
+            {
+                gestorConcesionaria.Baja(seleccionado);
+
+                MostrarPedido();
+            }
         }
     }
 }

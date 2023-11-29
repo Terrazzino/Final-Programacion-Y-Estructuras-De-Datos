@@ -117,6 +117,7 @@
             btnBajaPedidos.TabIndex = 7;
             btnBajaPedidos.Text = "Baja";
             btnBajaPedidos.UseVisualStyleBackColor = true;
+            btnBajaPedidos.Click += btnBajaPedidos_Click_1;
             // 
             // btnModificarPeddidos
             // 
@@ -138,6 +139,8 @@
             dgvConcesionariaPedidos.RowTemplate.Height = 29;
             dgvConcesionariaPedidos.Size = new Size(374, 120);
             dgvConcesionariaPedidos.TabIndex = 9;
+            dgvConcesionariaPedidos.CellClick += dgvConcesionariaPedidos_CellContentClick_1;
+            dgvConcesionariaPedidos.CellContentClick += dgvConcesionariaPedidos_CellContentClick_1;
             // 
             // FormConcesionaria
             // 
