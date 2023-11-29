@@ -128,6 +128,7 @@
             btnModificarPeddidos.TabIndex = 8;
             btnModificarPeddidos.Text = "Modificar";
             btnModificarPeddidos.UseVisualStyleBackColor = true;
+            btnModificarPeddidos.Click += btnModificarPeddidos_Click;
             // 
             // dgvConcesionariaPedidos
             // 

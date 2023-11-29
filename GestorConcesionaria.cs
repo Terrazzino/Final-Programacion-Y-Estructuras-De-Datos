@@ -106,5 +106,54 @@ namespace tpFinal
 
         }
 
+        public void Modificar(int numeroModelo, int numeroConcesionaria, int cantidadPedido, int seleccionado)
+        {
+            string archivoTemporal = "temp.txt";
+
+            try
+            {
+                using (FileStream fs = new FileStream(archivo, FileMode.Open, FileAccess.Read))
+                using (StreamReader reader = new StreamReader(fs))
+                using (FileStream fsTemp = new FileStream(archivoTemporal, FileMode.Create, FileAccess.Write))
+                using (StreamWriter writer = new StreamWriter(fsTemp))
+                {
+                    string linea;
+                    int contador = 0;
+
+                    while ((linea = reader.ReadLine()) != null)
+                    {
+                        Concesionaria unPedido = new Concesionaria(linea);
+
+                        if (seleccionado != contador)
+                        {
+                            writer.WriteLine(linea);
+                        }
+                        else
+                        {
+
+                            unPedido.NumeroModelo = numeroModelo;
+                            unPedido.NumeroConcecionaria = numeroConcesionaria;
+                            unPedido.Cantidad = cantidadPedido;
+
+
+                            writer.WriteLine(unPedido.ObtenerRegistro());
+
+                        }
+                        contador++;
+                    }
+                }
+
+
+                File.Delete(archivo);
+                File.Move(archivoTemporal, archivo);
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine($"Error al modificar el archivo: {ex.Message}");
+            }
+        }
+       
+
     }
 }

@@ -43,6 +43,10 @@ namespace tpFinal
         private void dgvConcesionariaPedidos_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             seleccionado = e.RowIndex;
+
+            cmbModeloPedidos.Text = dgvConcesionariaPedidos.Rows[seleccionado].Cells[0].Value.ToString();
+            cmbConcesionariaPedidos.Text = dgvConcesionariaPedidos.Rows[seleccionado].Cells[1].Value.ToString();
+            nudCantidadPedidos.Text = dgvConcesionariaPedidos.Rows[seleccionado].Cells[2].Value.ToString();
         }
 
         private void btnBajaPedidos_Click_1(object sender, EventArgs e)
@@ -51,6 +55,20 @@ namespace tpFinal
             {
                 gestorConcesionaria.Baja(seleccionado);
 
+                MostrarPedido();
+            }
+        }
+
+        private void btnModificarPeddidos_Click(object sender, EventArgs e)
+        {
+            if (seleccionado != -1)
+            {
+                int numeroModelo = Convert.ToInt32(cmbModeloPedidos.Text);
+                int numeroConcesionaria = Convert.ToInt32(cmbConcesionariaPedidos.Text);
+                int cantidadPedido = Convert.ToInt32(nudCantidadPedidos.Value);
+
+
+                gestorConcesionaria.Modificar(numeroModelo, numeroConcesionaria, cantidadPedido, seleccionado);
                 MostrarPedido();
             }
         }
