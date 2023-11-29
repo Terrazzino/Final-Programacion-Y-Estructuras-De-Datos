@@ -17,9 +17,6 @@ namespace tpFinal
             InitializeComponent();
         }
 
-        private void btnAltaPedidos_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Hola");
-        }
+       
     }
 }

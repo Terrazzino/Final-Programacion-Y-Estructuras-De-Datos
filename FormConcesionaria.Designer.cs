@@ -109,7 +109,7 @@
             btnAltaPedidos.TabIndex = 6;
             btnAltaPedidos.Text = "Alta";
             btnAltaPedidos.UseVisualStyleBackColor = true;
-            btnAltaPedidos.Click += btnAltaPedidos_Click;
+           
             // 
             // btnBajaPedidos
             // 
