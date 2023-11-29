@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USUARIO\\Desktop\\ESCRITORIO\\PROGRAMAS\\Practicas Visual con C#\\tpFinal\\tpFinal.csproj": {}
+    "C:\\Users\\Ulises\\Desktop\\FINALPEDRO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USUARIO\\Desktop\\ESCRITORIO\\PROGRAMAS\\Practicas Visual con C#\\tpFinal\\tpFinal.csproj": {
+    "C:\\Users\\Ulises\\Desktop\\FINALPEDRO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\ESCRITORIO\\PROGRAMAS\\Practicas Visual con C#\\tpFinal\\tpFinal.csproj",
+        "projectUniqueName": "C:\\Users\\Ulises\\Desktop\\FINALPEDRO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj",
         "projectName": "tpFinal",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\ESCRITORIO\\PROGRAMAS\\Practicas Visual con C#\\tpFinal\\tpFinal.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\ESCRITORIO\\PROGRAMAS\\Practicas Visual con C#\\tpFinal\\obj\\",
+        "projectPath": "C:\\Users\\Ulises\\Desktop\\FINALPEDRO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj",
+        "packagesPath": "C:\\Users\\Ulises\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ulises\\Desktop\\FINALPEDRO\\Final-Programacion-Y-Estructuras-De-Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ulises\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
