@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tpFinal
+namespace tpFinal.Clases.Concecionaria
 {
     public class GestorConcesionaria
     {
@@ -56,7 +56,7 @@ namespace tpFinal
                         }
                     }
                 }
-                
+
             }
             return pedidos;
         }
@@ -82,7 +82,6 @@ namespace tpFinal
 
                 while (linea != null)
                 {
-                    Concesionaria unPedido = new Concesionaria(linea);
 
                     if (seleccionado != contador)
                     {
@@ -153,7 +152,7 @@ namespace tpFinal
                 Console.WriteLine($"Error al modificar el archivo: {ex.Message}");
             }
         }
-       
+
 
     }
 }

@@ -29,35 +29,24 @@
         private void InitializeComponent()
         {
             dgvTerminadosEmpresa = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
             btnModificarTerminado = new Button();
             btnBajaTerminado = new Button();
             btnAltaTerminado = new Button();
             nudStockTerminado = new NumericUpDown();
-            cmbDescripciónTerminado = new ComboBox();
             cmbModeloTerminado = new ComboBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             dgvPiezasEmpresa = new DataGridView();
-            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
             btnModificarPiezas = new Button();
             btnBajaPiezas = new Button();
             btnAltaPiezas = new Button();
             nudStockPiezas = new NumericUpDown();
-            cmbDescripciónPieza = new ComboBox();
             cmbNumeroPieza = new ComboBox();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
             dgvComposicionEmpresa = new DataGridView();
-            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
             btnModificarComposicion = new Button();
             btnBajaComposicion = new Button();
             btnAltaComposicion = new Button();
@@ -71,6 +60,8 @@
             label11 = new Label();
             label12 = new Label();
             label13 = new Label();
+            txtDescripcionTerminado = new TextBox();
+            txtDescripcionPieza = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvTerminadosEmpresa).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudStockTerminado).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvPiezasEmpresa).BeginInit();
@@ -82,34 +73,13 @@
             // dgvTerminadosEmpresa
             // 
             dgvTerminadosEmpresa.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTerminadosEmpresa.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
             dgvTerminadosEmpresa.Location = new Point(320, 64);
             dgvTerminadosEmpresa.Name = "dgvTerminadosEmpresa";
             dgvTerminadosEmpresa.RowHeadersWidth = 51;
             dgvTerminadosEmpresa.RowTemplate.Height = 29;
             dgvTerminadosEmpresa.Size = new Size(428, 160);
             dgvTerminadosEmpresa.TabIndex = 19;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Modelo";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Concesionaria";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Cantidad";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.Width = 125;
+            dgvTerminadosEmpresa.CellClick += dgvTerminadosEmpresa_CellClick;
             // 
             // btnModificarTerminado
             // 
@@ -119,6 +89,7 @@
             btnModificarTerminado.TabIndex = 18;
             btnModificarTerminado.Text = "Modificar";
             btnModificarTerminado.UseVisualStyleBackColor = true;
+            btnModificarTerminado.Click += btnModificarTerminado_Click;
             // 
             // btnBajaTerminado
             // 
@@ -128,6 +99,7 @@
             btnBajaTerminado.TabIndex = 17;
             btnBajaTerminado.Text = "Baja";
             btnBajaTerminado.UseVisualStyleBackColor = true;
+            btnBajaTerminado.Click += btnBajaTerminado_Click;
             // 
             // btnAltaTerminado
             // 
@@ -137,6 +109,7 @@
             btnAltaTerminado.TabIndex = 16;
             btnAltaTerminado.Text = "Alta";
             btnAltaTerminado.UseVisualStyleBackColor = true;
+            btnAltaTerminado.Click += btnAltaTerminado_Click;
             // 
             // nudStockTerminado
             // 
@@ -144,15 +117,6 @@
             nudStockTerminado.Name = "nudStockTerminado";
             nudStockTerminado.Size = new Size(181, 27);
             nudStockTerminado.TabIndex = 15;
-            // 
-            // cmbDescripciónTerminado
-            // 
-            cmbDescripciónTerminado.FormattingEnabled = true;
-            cmbDescripciónTerminado.Items.AddRange(new object[] { "10", "20", "30", "40", "50" });
-            cmbDescripciónTerminado.Location = new Point(12, 141);
-            cmbDescripciónTerminado.Name = "cmbDescripciónTerminado";
-            cmbDescripciónTerminado.Size = new Size(181, 28);
-            cmbDescripciónTerminado.TabIndex = 14;
             // 
             // cmbModeloTerminado
             // 
@@ -193,34 +157,12 @@
             // dgvPiezasEmpresa
             // 
             dgvPiezasEmpresa.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvPiezasEmpresa.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3 });
             dgvPiezasEmpresa.Location = new Point(320, 303);
             dgvPiezasEmpresa.Name = "dgvPiezasEmpresa";
             dgvPiezasEmpresa.RowHeadersWidth = 51;
             dgvPiezasEmpresa.RowTemplate.Height = 29;
             dgvPiezasEmpresa.Size = new Size(428, 160);
             dgvPiezasEmpresa.TabIndex = 29;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewTextBoxColumn1.HeaderText = "Modelo";
-            dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewTextBoxColumn2.HeaderText = "Concesionaria";
-            dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            dataGridViewTextBoxColumn3.HeaderText = "Cantidad";
-            dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            dataGridViewTextBoxColumn3.Width = 125;
             // 
             // btnModificarPiezas
             // 
@@ -256,19 +198,10 @@
             nudStockPiezas.Size = new Size(181, 27);
             nudStockPiezas.TabIndex = 25;
             // 
-            // cmbDescripciónPieza
-            // 
-            cmbDescripciónPieza.FormattingEnabled = true;
-            cmbDescripciónPieza.Items.AddRange(new object[] { "10", "20", "30", "40", "50" });
-            cmbDescripciónPieza.Location = new Point(12, 380);
-            cmbDescripciónPieza.Name = "cmbDescripciónPieza";
-            cmbDescripciónPieza.Size = new Size(181, 28);
-            cmbDescripciónPieza.TabIndex = 24;
-            // 
             // cmbNumeroPieza
             // 
             cmbNumeroPieza.FormattingEnabled = true;
-            cmbNumeroPieza.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
+            cmbNumeroPieza.Items.AddRange(new object[] { "1 - Carroceria (1)", "2 - Motor (1)", "3 - Caja de Cambios (1)", "4 - Puertas (2 o 4)", "5 - Ruedas (4)" });
             cmbNumeroPieza.Location = new Point(12, 326);
             cmbNumeroPieza.Name = "cmbNumeroPieza";
             cmbNumeroPieza.Size = new Size(181, 28);
@@ -304,34 +237,12 @@
             // dgvComposicionEmpresa
             // 
             dgvComposicionEmpresa.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvComposicionEmpresa.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn4, dataGridViewTextBoxColumn5, dataGridViewTextBoxColumn6 });
             dgvComposicionEmpresa.Location = new Point(327, 553);
             dgvComposicionEmpresa.Name = "dgvComposicionEmpresa";
             dgvComposicionEmpresa.RowHeadersWidth = 51;
             dgvComposicionEmpresa.RowTemplate.Height = 29;
             dgvComposicionEmpresa.Size = new Size(428, 160);
             dgvComposicionEmpresa.TabIndex = 39;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            dataGridViewTextBoxColumn4.HeaderText = "Modelo";
-            dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            dataGridViewTextBoxColumn4.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            dataGridViewTextBoxColumn5.HeaderText = "Concesionaria";
-            dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            dataGridViewTextBoxColumn5.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            dataGridViewTextBoxColumn6.HeaderText = "Cantidad";
-            dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            dataGridViewTextBoxColumn6.Width = 125;
             // 
             // btnModificarComposicion
             // 
@@ -370,7 +281,7 @@
             // cmbNumPiezasComposición
             // 
             cmbNumPiezasComposición.FormattingEnabled = true;
-            cmbNumPiezasComposición.Items.AddRange(new object[] { "10", "20", "30", "40", "50" });
+            cmbNumPiezasComposición.Items.AddRange(new object[] { "1 - Carroceria (1)", "2 - Motor (1)", "3 - Caja de Cambios (1)", "4 - Puertas (2 o 4)", "5 - Ruedas (4)" });
             cmbNumPiezasComposición.Location = new Point(19, 630);
             cmbNumPiezasComposición.Name = "cmbNumPiezasComposición";
             cmbNumPiezasComposición.Size = new Size(181, 28);
@@ -441,7 +352,6 @@
             label12.Size = new Size(258, 28);
             label12.TabIndex = 42;
             label12.Text = "Composición de Vehículos";
-            label12.Click += label12_Click;
             // 
             // label13
             // 
@@ -452,11 +362,27 @@
             label13.TabIndex = 43;
             label13.Text = "Stock";
             // 
+            // txtDescripcionTerminado
+            // 
+            txtDescripcionTerminado.Location = new Point(12, 141);
+            txtDescripcionTerminado.Name = "txtDescripcionTerminado";
+            txtDescripcionTerminado.Size = new Size(181, 27);
+            txtDescripcionTerminado.TabIndex = 44;
+            // 
+            // txtDescripcionPieza
+            // 
+            txtDescripcionPieza.Location = new Point(12, 380);
+            txtDescripcionPieza.Name = "txtDescripcionPieza";
+            txtDescripcionPieza.Size = new Size(181, 27);
+            txtDescripcionPieza.TabIndex = 45;
+            // 
             // FormConcecionaria
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(767, 745);
+            Controls.Add(txtDescripcionPieza);
+            Controls.Add(txtDescripcionTerminado);
             Controls.Add(label13);
             Controls.Add(label12);
             Controls.Add(label11);
@@ -476,7 +402,6 @@
             Controls.Add(btnBajaPiezas);
             Controls.Add(btnAltaPiezas);
             Controls.Add(nudStockPiezas);
-            Controls.Add(cmbDescripciónPieza);
             Controls.Add(cmbNumeroPieza);
             Controls.Add(label4);
             Controls.Add(label5);
@@ -486,7 +411,6 @@
             Controls.Add(btnBajaTerminado);
             Controls.Add(btnAltaTerminado);
             Controls.Add(nudStockTerminado);
-            Controls.Add(cmbDescripciónTerminado);
             Controls.Add(cmbModeloTerminado);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -506,35 +430,24 @@
         #endregion
 
         private DataGridView dgvTerminadosEmpresa;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
         private Button btnModificarTerminado;
         private Button btnBajaTerminado;
         private Button btnAltaTerminado;
         private NumericUpDown nudStockTerminado;
-        private ComboBox cmbDescripciónTerminado;
         private ComboBox cmbModeloTerminado;
         private Label label3;
         private Label label2;
         private Label label1;
         private DataGridView dgvPiezasEmpresa;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private Button btnModificarPiezas;
         private Button btnBajaPiezas;
         private Button btnAltaPiezas;
         private NumericUpDown nudStockPiezas;
-        private ComboBox cmbDescripciónPieza;
         private ComboBox cmbNumeroPieza;
         private Label label4;
         private Label label5;
         private Label label6;
         private DataGridView dgvComposicionEmpresa;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private Button btnModificarComposicion;
         private Button btnBajaComposicion;
         private Button btnAltaComposicion;
@@ -548,5 +461,7 @@
         private Label label11;
         private Label label12;
         private Label label13;
+        private TextBox txtDescripcionTerminado;
+        private TextBox txtDescripcionPieza;
     }
 }

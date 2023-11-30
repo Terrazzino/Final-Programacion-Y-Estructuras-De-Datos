@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tpFinal
+namespace tpFinal.Clases.Concecionaria
 {
     public class Concesionaria
     {
@@ -28,7 +28,7 @@ namespace tpFinal
         }
         public string ObtenerRegistro()
         {
-            return String.Format("{0},{1},{2}", NumeroModelo, NumeroConcecionaria, Cantidad);
+            return string.Format("{0},{1},{2}", NumeroModelo, NumeroConcecionaria, Cantidad);
         }
     }
 

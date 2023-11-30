@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Ulises\\.nuget\\packages\\": {}
+    "C:\\Users\\USUARIO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ulises\\Desktop\\FINALPEDRO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj",
+      "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\tpFinal\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj",
       "projectName": "tpFinal",
-      "projectPath": "C:\\Users\\Ulises\\Desktop\\FINALPEDRO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj",
-      "packagesPath": "C:\\Users\\Ulises\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ulises\\Desktop\\FINALPEDRO\\Final-Programacion-Y-Estructuras-De-Datos\\obj\\",
+      "projectPath": "C:\\Users\\USUARIO\\Desktop\\tpFinal\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj",
+      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USUARIO\\Desktop\\tpFinal\\Final-Programacion-Y-Estructuras-De-Datos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ulises\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
