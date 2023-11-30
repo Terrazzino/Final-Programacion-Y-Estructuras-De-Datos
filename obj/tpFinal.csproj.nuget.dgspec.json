@@ -1,27 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leo\\Desktop\\TPfinal\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj": {}
+    "C:\\Users\\Ulises\\Desktop\\FINAL PEDROO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leo\\Desktop\\TPfinal\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj": {
+    "C:\\Users\\Ulises\\Desktop\\FINAL PEDROO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leo\\Desktop\\TPfinal\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj",
+        "projectUniqueName": "C:\\Users\\Ulises\\Desktop\\FINAL PEDROO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj",
         "projectName": "tpFinal",
-        "projectPath": "C:\\Users\\leo\\Desktop\\TPfinal\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj",
-        "packagesPath": "C:\\Users\\leo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leo\\Desktop\\TPfinal\\Final-Programacion-Y-Estructuras-De-Datos\\obj\\",
+        "projectPath": "C:\\Users\\Ulises\\Desktop\\FINAL PEDROO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj",
+        "packagesPath": "C:\\Users\\Ulises\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ulises\\Desktop\\FINAL PEDROO\\Final-Programacion-Y-Estructuras-De-Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\leo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ulises\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -57,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

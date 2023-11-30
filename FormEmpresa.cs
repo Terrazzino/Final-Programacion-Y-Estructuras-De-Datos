@@ -25,6 +25,8 @@ namespace tpFinal
             MostrarStockPieza();
         }
 
+        // TERMINADOS
+
         private void btnAltaTerminado_Click(object sender, EventArgs e)
         {
             int numeroModelo = Convert.ToInt32(cmbModeloTerminado.Text);
@@ -74,6 +76,7 @@ namespace tpFinal
             }
         }
 
+        // PIEZAS 
         private void btnAltaPiezas_Click(object sender, EventArgs e)
         {
             int numeroPieza = Convert.ToInt32(cmbNumeroPieza.SelectedIndex+1);
