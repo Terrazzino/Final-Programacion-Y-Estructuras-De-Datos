@@ -28,403 +28,447 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dgvTerminadosEmpresa = new DataGridView();
-            btnModificarTerminado = new Button();
-            btnBajaTerminado = new Button();
-            btnAltaTerminado = new Button();
-            nudStockTerminado = new NumericUpDown();
-            cmbModeloTerminado = new ComboBox();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
-            dgvPiezasEmpresa = new DataGridView();
-            btnModificarPiezas = new Button();
-            btnBajaPiezas = new Button();
-            btnAltaPiezas = new Button();
-            nudStockPiezas = new NumericUpDown();
-            cmbNumeroPieza = new ComboBox();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            dgvComposicionEmpresa = new DataGridView();
-            btnModificarComposicion = new Button();
-            btnBajaComposicion = new Button();
-            btnAltaComposicion = new Button();
-            nudCantidadComposicion = new NumericUpDown();
-            cmbNumPiezasComposición = new ComboBox();
-            cmbModeloComposicion = new ComboBox();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            label13 = new Label();
-            txtDescripcionTerminado = new TextBox();
-            txtDescripcionPieza = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dgvTerminadosEmpresa).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)nudStockTerminado).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgvPiezasEmpresa).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)nudStockPiezas).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgvComposicionEmpresa).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)nudCantidadComposicion).BeginInit();
-            SuspendLayout();
+            this.dgvTerminadosEmpresa = new System.Windows.Forms.DataGridView();
+            this.btnModificarTerminado = new System.Windows.Forms.Button();
+            this.btnBajaTerminado = new System.Windows.Forms.Button();
+            this.btnAltaTerminado = new System.Windows.Forms.Button();
+            this.nudStockTerminado = new System.Windows.Forms.NumericUpDown();
+            this.cmbModeloTerminado = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgvPiezasEmpresa = new System.Windows.Forms.DataGridView();
+            this.btnModificarPiezas = new System.Windows.Forms.Button();
+            this.btnBajaPiezas = new System.Windows.Forms.Button();
+            this.btnAltaPiezas = new System.Windows.Forms.Button();
+            this.nudStockPiezas = new System.Windows.Forms.NumericUpDown();
+            this.cmbNumeroPieza = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dgvComposicionEmpresa = new System.Windows.Forms.DataGridView();
+            this.btnModificarComposicion = new System.Windows.Forms.Button();
+            this.btnBajaComposicion = new System.Windows.Forms.Button();
+            this.btnAltaComposicion = new System.Windows.Forms.Button();
+            this.nudCantidadComposicion = new System.Windows.Forms.NumericUpDown();
+            this.cmbNumPiezasComposición = new System.Windows.Forms.ComboBox();
+            this.cmbModeloComposicion = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtDescripcionTerminado = new System.Windows.Forms.TextBox();
+            this.txtDescripcionPieza = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTerminadosEmpresa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStockTerminado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPiezasEmpresa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStockPiezas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvComposicionEmpresa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadComposicion)).BeginInit();
+            this.SuspendLayout();
             // 
             // dgvTerminadosEmpresa
             // 
-            dgvTerminadosEmpresa.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTerminadosEmpresa.Location = new Point(320, 64);
-            dgvTerminadosEmpresa.Name = "dgvTerminadosEmpresa";
-            dgvTerminadosEmpresa.RowHeadersWidth = 51;
-            dgvTerminadosEmpresa.RowTemplate.Height = 29;
-            dgvTerminadosEmpresa.Size = new Size(428, 160);
-            dgvTerminadosEmpresa.TabIndex = 19;
-            dgvTerminadosEmpresa.CellClick += dgvTerminadosEmpresa_CellClick;
+            this.dgvTerminadosEmpresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTerminadosEmpresa.Location = new System.Drawing.Point(280, 48);
+            this.dgvTerminadosEmpresa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvTerminadosEmpresa.Name = "dgvTerminadosEmpresa";
+            this.dgvTerminadosEmpresa.RowHeadersWidth = 51;
+            this.dgvTerminadosEmpresa.RowTemplate.Height = 29;
+            this.dgvTerminadosEmpresa.Size = new System.Drawing.Size(374, 120);
+            this.dgvTerminadosEmpresa.TabIndex = 19;
             // 
             // btnModificarTerminado
             // 
-            btnModificarTerminado.Location = new Point(208, 195);
-            btnModificarTerminado.Name = "btnModificarTerminado";
-            btnModificarTerminado.Size = new Size(94, 29);
-            btnModificarTerminado.TabIndex = 18;
-            btnModificarTerminado.Text = "Modificar";
-            btnModificarTerminado.UseVisualStyleBackColor = true;
-            btnModificarTerminado.Click += btnModificarTerminado_Click;
+            this.btnModificarTerminado.Location = new System.Drawing.Point(182, 146);
+            this.btnModificarTerminado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnModificarTerminado.Name = "btnModificarTerminado";
+            this.btnModificarTerminado.Size = new System.Drawing.Size(82, 22);
+            this.btnModificarTerminado.TabIndex = 18;
+            this.btnModificarTerminado.Text = "Modificar";
+            this.btnModificarTerminado.UseVisualStyleBackColor = true;
             // 
             // btnBajaTerminado
             // 
-            btnBajaTerminado.Location = new Point(208, 141);
-            btnBajaTerminado.Name = "btnBajaTerminado";
-            btnBajaTerminado.Size = new Size(94, 29);
-            btnBajaTerminado.TabIndex = 17;
-            btnBajaTerminado.Text = "Baja";
-            btnBajaTerminado.UseVisualStyleBackColor = true;
-            btnBajaTerminado.Click += btnBajaTerminado_Click;
+            this.btnBajaTerminado.Location = new System.Drawing.Point(182, 106);
+            this.btnBajaTerminado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBajaTerminado.Name = "btnBajaTerminado";
+            this.btnBajaTerminado.Size = new System.Drawing.Size(82, 22);
+            this.btnBajaTerminado.TabIndex = 17;
+            this.btnBajaTerminado.Text = "Baja";
+            this.btnBajaTerminado.UseVisualStyleBackColor = true;
             // 
             // btnAltaTerminado
             // 
-            btnAltaTerminado.Location = new Point(208, 87);
-            btnAltaTerminado.Name = "btnAltaTerminado";
-            btnAltaTerminado.Size = new Size(94, 29);
-            btnAltaTerminado.TabIndex = 16;
-            btnAltaTerminado.Text = "Alta";
-            btnAltaTerminado.UseVisualStyleBackColor = true;
-            btnAltaTerminado.Click += btnAltaTerminado_Click;
+            this.btnAltaTerminado.Location = new System.Drawing.Point(182, 65);
+            this.btnAltaTerminado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAltaTerminado.Name = "btnAltaTerminado";
+            this.btnAltaTerminado.Size = new System.Drawing.Size(82, 22);
+            this.btnAltaTerminado.TabIndex = 16;
+            this.btnAltaTerminado.Text = "Alta";
+            this.btnAltaTerminado.UseVisualStyleBackColor = true;
             // 
             // nudStockTerminado
             // 
-            nudStockTerminado.Location = new Point(12, 195);
-            nudStockTerminado.Name = "nudStockTerminado";
-            nudStockTerminado.Size = new Size(181, 27);
-            nudStockTerminado.TabIndex = 15;
+            this.nudStockTerminado.Location = new System.Drawing.Point(10, 146);
+            this.nudStockTerminado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nudStockTerminado.Name = "nudStockTerminado";
+            this.nudStockTerminado.Size = new System.Drawing.Size(158, 23);
+            this.nudStockTerminado.TabIndex = 15;
             // 
             // cmbModeloTerminado
             // 
-            cmbModeloTerminado.FormattingEnabled = true;
-            cmbModeloTerminado.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            cmbModeloTerminado.Location = new Point(12, 87);
-            cmbModeloTerminado.Name = "cmbModeloTerminado";
-            cmbModeloTerminado.Size = new Size(181, 28);
-            cmbModeloTerminado.TabIndex = 13;
+            this.cmbModeloTerminado.FormattingEnabled = true;
+            this.cmbModeloTerminado.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbModeloTerminado.Location = new System.Drawing.Point(10, 65);
+            this.cmbModeloTerminado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbModeloTerminado.Name = "cmbModeloTerminado";
+            this.cmbModeloTerminado.Size = new System.Drawing.Size(159, 23);
+            this.cmbModeloTerminado.TabIndex = 13;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(12, 172);
-            label3.Name = "label3";
-            label3.Size = new Size(45, 20);
-            label3.TabIndex = 12;
-            label3.Text = "Stock";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 129);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 15);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Stock";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(12, 64);
-            label2.Name = "label2";
-            label2.Size = new Size(140, 20);
-            label2.TabIndex = 11;
-            label2.Text = "Numero de Modelo";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 15);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Numero de Modelo";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(12, 118);
-            label1.Name = "label1";
-            label1.Size = new Size(87, 20);
-            label1.TabIndex = 10;
-            label1.Text = "Descripción";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 88);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 15);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Descripción";
             // 
             // dgvPiezasEmpresa
             // 
-            dgvPiezasEmpresa.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvPiezasEmpresa.Location = new Point(320, 303);
-            dgvPiezasEmpresa.Name = "dgvPiezasEmpresa";
-            dgvPiezasEmpresa.RowHeadersWidth = 51;
-            dgvPiezasEmpresa.RowTemplate.Height = 29;
-            dgvPiezasEmpresa.Size = new Size(428, 160);
-            dgvPiezasEmpresa.TabIndex = 29;
+            this.dgvPiezasEmpresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPiezasEmpresa.Location = new System.Drawing.Point(280, 227);
+            this.dgvPiezasEmpresa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvPiezasEmpresa.Name = "dgvPiezasEmpresa";
+            this.dgvPiezasEmpresa.RowHeadersWidth = 51;
+            this.dgvPiezasEmpresa.RowTemplate.Height = 29;
+            this.dgvPiezasEmpresa.Size = new System.Drawing.Size(374, 120);
+            this.dgvPiezasEmpresa.TabIndex = 29;
+            this.dgvPiezasEmpresa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPiezasEmpresa_CellContentClick);
+            this.dgvPiezasEmpresa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPiezasEmpresa_CellContentClick);
             // 
             // btnModificarPiezas
             // 
-            btnModificarPiezas.Location = new Point(208, 434);
-            btnModificarPiezas.Name = "btnModificarPiezas";
-            btnModificarPiezas.Size = new Size(94, 29);
-            btnModificarPiezas.TabIndex = 28;
-            btnModificarPiezas.Text = "Modificar";
-            btnModificarPiezas.UseVisualStyleBackColor = true;
+            this.btnModificarPiezas.Location = new System.Drawing.Point(182, 326);
+            this.btnModificarPiezas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnModificarPiezas.Name = "btnModificarPiezas";
+            this.btnModificarPiezas.Size = new System.Drawing.Size(82, 22);
+            this.btnModificarPiezas.TabIndex = 28;
+            this.btnModificarPiezas.Text = "Modificar";
+            this.btnModificarPiezas.UseVisualStyleBackColor = true;
+            this.btnModificarPiezas.Click += new System.EventHandler(this.btnModificarPiezas_Click);
             // 
             // btnBajaPiezas
             // 
-            btnBajaPiezas.Location = new Point(208, 380);
-            btnBajaPiezas.Name = "btnBajaPiezas";
-            btnBajaPiezas.Size = new Size(94, 29);
-            btnBajaPiezas.TabIndex = 27;
-            btnBajaPiezas.Text = "Baja";
-            btnBajaPiezas.UseVisualStyleBackColor = true;
+            this.btnBajaPiezas.Location = new System.Drawing.Point(182, 285);
+            this.btnBajaPiezas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBajaPiezas.Name = "btnBajaPiezas";
+            this.btnBajaPiezas.Size = new System.Drawing.Size(82, 22);
+            this.btnBajaPiezas.TabIndex = 27;
+            this.btnBajaPiezas.Text = "Baja";
+            this.btnBajaPiezas.UseVisualStyleBackColor = true;
+            this.btnBajaPiezas.Click += new System.EventHandler(this.btnBajaPiezas_Click);
             // 
             // btnAltaPiezas
             // 
-            btnAltaPiezas.Location = new Point(208, 326);
-            btnAltaPiezas.Name = "btnAltaPiezas";
-            btnAltaPiezas.Size = new Size(94, 29);
-            btnAltaPiezas.TabIndex = 26;
-            btnAltaPiezas.Text = "Alta";
-            btnAltaPiezas.UseVisualStyleBackColor = true;
+            this.btnAltaPiezas.Location = new System.Drawing.Point(182, 244);
+            this.btnAltaPiezas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAltaPiezas.Name = "btnAltaPiezas";
+            this.btnAltaPiezas.Size = new System.Drawing.Size(82, 22);
+            this.btnAltaPiezas.TabIndex = 26;
+            this.btnAltaPiezas.Text = "Alta";
+            this.btnAltaPiezas.UseVisualStyleBackColor = true;
+            this.btnAltaPiezas.Click += new System.EventHandler(this.btnAltaPiezas_Click);
             // 
             // nudStockPiezas
             // 
-            nudStockPiezas.Location = new Point(12, 434);
-            nudStockPiezas.Name = "nudStockPiezas";
-            nudStockPiezas.Size = new Size(181, 27);
-            nudStockPiezas.TabIndex = 25;
+            this.nudStockPiezas.Location = new System.Drawing.Point(10, 326);
+            this.nudStockPiezas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nudStockPiezas.Name = "nudStockPiezas";
+            this.nudStockPiezas.Size = new System.Drawing.Size(158, 23);
+            this.nudStockPiezas.TabIndex = 25;
             // 
             // cmbNumeroPieza
             // 
-            cmbNumeroPieza.FormattingEnabled = true;
-            cmbNumeroPieza.Items.AddRange(new object[] { "1 - Carroceria (1)", "2 - Motor (1)", "3 - Caja de Cambios (1)", "4 - Puertas (2 o 4)", "5 - Ruedas (4)" });
-            cmbNumeroPieza.Location = new Point(12, 326);
-            cmbNumeroPieza.Name = "cmbNumeroPieza";
-            cmbNumeroPieza.Size = new Size(181, 28);
-            cmbNumeroPieza.TabIndex = 23;
+            this.cmbNumeroPieza.FormattingEnabled = true;
+            this.cmbNumeroPieza.Items.AddRange(new object[] {
+            "1 - Carroceria (1)",
+            "2 - Motor (1)",
+            "3 - Caja de Cambios (1)",
+            "4 - Puertas (2 o 4)",
+            "5 - Ruedas (4)"});
+            this.cmbNumeroPieza.Location = new System.Drawing.Point(10, 244);
+            this.cmbNumeroPieza.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbNumeroPieza.Name = "cmbNumeroPieza";
+            this.cmbNumeroPieza.Size = new System.Drawing.Size(159, 23);
+            this.cmbNumeroPieza.TabIndex = 23;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(19, 443);
-            label4.Name = "label4";
-            label4.Size = new Size(45, 20);
-            label4.TabIndex = 22;
-            label4.Text = "Stock";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(17, 332);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(36, 15);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Stock";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(12, 303);
-            label5.Name = "label5";
-            label5.Size = new Size(123, 20);
-            label5.TabIndex = 21;
-            label5.Text = "Numero de Pieza";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(10, 227);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(97, 15);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Numero de Pieza";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(12, 357);
-            label6.Name = "label6";
-            label6.Size = new Size(87, 20);
-            label6.TabIndex = 20;
-            label6.Text = "Descripción";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(10, 268);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 15);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Descripción";
             // 
             // dgvComposicionEmpresa
             // 
-            dgvComposicionEmpresa.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvComposicionEmpresa.Location = new Point(327, 553);
-            dgvComposicionEmpresa.Name = "dgvComposicionEmpresa";
-            dgvComposicionEmpresa.RowHeadersWidth = 51;
-            dgvComposicionEmpresa.RowTemplate.Height = 29;
-            dgvComposicionEmpresa.Size = new Size(428, 160);
-            dgvComposicionEmpresa.TabIndex = 39;
+            this.dgvComposicionEmpresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvComposicionEmpresa.Location = new System.Drawing.Point(286, 415);
+            this.dgvComposicionEmpresa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvComposicionEmpresa.Name = "dgvComposicionEmpresa";
+            this.dgvComposicionEmpresa.RowHeadersWidth = 51;
+            this.dgvComposicionEmpresa.RowTemplate.Height = 29;
+            this.dgvComposicionEmpresa.Size = new System.Drawing.Size(374, 120);
+            this.dgvComposicionEmpresa.TabIndex = 39;
             // 
             // btnModificarComposicion
             // 
-            btnModificarComposicion.Location = new Point(215, 684);
-            btnModificarComposicion.Name = "btnModificarComposicion";
-            btnModificarComposicion.Size = new Size(94, 29);
-            btnModificarComposicion.TabIndex = 38;
-            btnModificarComposicion.Text = "Modificar";
-            btnModificarComposicion.UseVisualStyleBackColor = true;
+            this.btnModificarComposicion.Location = new System.Drawing.Point(188, 513);
+            this.btnModificarComposicion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnModificarComposicion.Name = "btnModificarComposicion";
+            this.btnModificarComposicion.Size = new System.Drawing.Size(82, 22);
+            this.btnModificarComposicion.TabIndex = 38;
+            this.btnModificarComposicion.Text = "Modificar";
+            this.btnModificarComposicion.UseVisualStyleBackColor = true;
             // 
             // btnBajaComposicion
             // 
-            btnBajaComposicion.Location = new Point(215, 630);
-            btnBajaComposicion.Name = "btnBajaComposicion";
-            btnBajaComposicion.Size = new Size(94, 29);
-            btnBajaComposicion.TabIndex = 37;
-            btnBajaComposicion.Text = "Baja";
-            btnBajaComposicion.UseVisualStyleBackColor = true;
+            this.btnBajaComposicion.Location = new System.Drawing.Point(188, 472);
+            this.btnBajaComposicion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBajaComposicion.Name = "btnBajaComposicion";
+            this.btnBajaComposicion.Size = new System.Drawing.Size(82, 22);
+            this.btnBajaComposicion.TabIndex = 37;
+            this.btnBajaComposicion.Text = "Baja";
+            this.btnBajaComposicion.UseVisualStyleBackColor = true;
             // 
             // btnAltaComposicion
             // 
-            btnAltaComposicion.Location = new Point(215, 576);
-            btnAltaComposicion.Name = "btnAltaComposicion";
-            btnAltaComposicion.Size = new Size(94, 29);
-            btnAltaComposicion.TabIndex = 36;
-            btnAltaComposicion.Text = "Alta";
-            btnAltaComposicion.UseVisualStyleBackColor = true;
+            this.btnAltaComposicion.Location = new System.Drawing.Point(188, 432);
+            this.btnAltaComposicion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAltaComposicion.Name = "btnAltaComposicion";
+            this.btnAltaComposicion.Size = new System.Drawing.Size(82, 22);
+            this.btnAltaComposicion.TabIndex = 36;
+            this.btnAltaComposicion.Text = "Alta";
+            this.btnAltaComposicion.UseVisualStyleBackColor = true;
             // 
             // nudCantidadComposicion
             // 
-            nudCantidadComposicion.Location = new Point(19, 684);
-            nudCantidadComposicion.Name = "nudCantidadComposicion";
-            nudCantidadComposicion.Size = new Size(181, 27);
-            nudCantidadComposicion.TabIndex = 35;
+            this.nudCantidadComposicion.Location = new System.Drawing.Point(17, 513);
+            this.nudCantidadComposicion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nudCantidadComposicion.Name = "nudCantidadComposicion";
+            this.nudCantidadComposicion.Size = new System.Drawing.Size(158, 23);
+            this.nudCantidadComposicion.TabIndex = 35;
             // 
             // cmbNumPiezasComposición
             // 
-            cmbNumPiezasComposición.FormattingEnabled = true;
-            cmbNumPiezasComposición.Items.AddRange(new object[] { "1 - Carroceria (1)", "2 - Motor (1)", "3 - Caja de Cambios (1)", "4 - Puertas (2 o 4)", "5 - Ruedas (4)" });
-            cmbNumPiezasComposición.Location = new Point(19, 630);
-            cmbNumPiezasComposición.Name = "cmbNumPiezasComposición";
-            cmbNumPiezasComposición.Size = new Size(181, 28);
-            cmbNumPiezasComposición.TabIndex = 34;
+            this.cmbNumPiezasComposición.FormattingEnabled = true;
+            this.cmbNumPiezasComposición.Items.AddRange(new object[] {
+            "1 - Carroceria (1)",
+            "2 - Motor (1)",
+            "3 - Caja de Cambios (1)",
+            "4 - Puertas (2 o 4)",
+            "5 - Ruedas (4)"});
+            this.cmbNumPiezasComposición.Location = new System.Drawing.Point(17, 472);
+            this.cmbNumPiezasComposición.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbNumPiezasComposición.Name = "cmbNumPiezasComposición";
+            this.cmbNumPiezasComposición.Size = new System.Drawing.Size(159, 23);
+            this.cmbNumPiezasComposición.TabIndex = 34;
             // 
             // cmbModeloComposicion
             // 
-            cmbModeloComposicion.FormattingEnabled = true;
-            cmbModeloComposicion.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            cmbModeloComposicion.Location = new Point(19, 576);
-            cmbModeloComposicion.Name = "cmbModeloComposicion";
-            cmbModeloComposicion.Size = new Size(181, 28);
-            cmbModeloComposicion.TabIndex = 33;
+            this.cmbModeloComposicion.FormattingEnabled = true;
+            this.cmbModeloComposicion.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbModeloComposicion.Location = new System.Drawing.Point(17, 432);
+            this.cmbModeloComposicion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbModeloComposicion.Name = "cmbModeloComposicion";
+            this.cmbModeloComposicion.Size = new System.Drawing.Size(159, 23);
+            this.cmbModeloComposicion.TabIndex = 33;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(19, 661);
-            label7.Name = "label7";
-            label7.Size = new Size(114, 20);
-            label7.TabIndex = 32;
-            label7.Text = "Cantidad a Usar";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(17, 496);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 15);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "Cantidad a Usar";
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(19, 553);
-            label8.Name = "label8";
-            label8.Size = new Size(140, 20);
-            label8.TabIndex = 31;
-            label8.Text = "Numero de Modelo";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(17, 415);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(111, 15);
+            this.label8.TabIndex = 31;
+            this.label8.Text = "Numero de Modelo";
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(19, 607);
-            label9.Name = "label9";
-            label9.Size = new Size(129, 20);
-            label9.TabIndex = 30;
-            label9.Text = "Numero de Piezas";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(17, 455);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(102, 15);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "Numero de Piezas";
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(12, 24);
-            label10.Name = "label10";
-            label10.Size = new Size(170, 28);
-            label10.TabIndex = 40;
-            label10.Text = "Stock Terminado";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(10, 18);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(138, 21);
+            this.label10.TabIndex = 40;
+            this.label10.Text = "Stock Terminado";
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(12, 261);
-            label11.Name = "label11";
-            label11.Size = new Size(129, 28);
-            label11.TabIndex = 41;
-            label11.Text = "Stock Piezas";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(10, 196);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(104, 21);
+            this.label11.TabIndex = 41;
+            this.label11.Text = "Stock Piezas";
             // 
             // label12
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.Location = new Point(12, 514);
-            label12.Name = "label12";
-            label12.Size = new Size(258, 28);
-            label12.TabIndex = 42;
-            label12.Text = "Composición de Vehículos";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(10, 386);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(211, 21);
+            this.label12.TabIndex = 42;
+            this.label12.Text = "Composición de Vehículos";
             // 
             // label13
             // 
-            label13.AutoSize = true;
-            label13.Location = new Point(12, 411);
-            label13.Name = "label13";
-            label13.Size = new Size(45, 20);
-            label13.TabIndex = 43;
-            label13.Text = "Stock";
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(10, 308);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(36, 15);
+            this.label13.TabIndex = 43;
+            this.label13.Text = "Stock";
             // 
             // txtDescripcionTerminado
             // 
-            txtDescripcionTerminado.Location = new Point(12, 141);
-            txtDescripcionTerminado.Name = "txtDescripcionTerminado";
-            txtDescripcionTerminado.Size = new Size(181, 27);
-            txtDescripcionTerminado.TabIndex = 44;
+            this.txtDescripcionTerminado.Location = new System.Drawing.Point(10, 106);
+            this.txtDescripcionTerminado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDescripcionTerminado.Name = "txtDescripcionTerminado";
+            this.txtDescripcionTerminado.Size = new System.Drawing.Size(159, 23);
+            this.txtDescripcionTerminado.TabIndex = 44;
             // 
             // txtDescripcionPieza
             // 
-            txtDescripcionPieza.Location = new Point(12, 380);
-            txtDescripcionPieza.Name = "txtDescripcionPieza";
-            txtDescripcionPieza.Size = new Size(181, 27);
-            txtDescripcionPieza.TabIndex = 45;
+            this.txtDescripcionPieza.Location = new System.Drawing.Point(10, 285);
+            this.txtDescripcionPieza.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDescripcionPieza.Name = "txtDescripcionPieza";
+            this.txtDescripcionPieza.Size = new System.Drawing.Size(159, 23);
+            this.txtDescripcionPieza.TabIndex = 45;
             // 
             // FormConcecionaria
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(767, 745);
-            Controls.Add(txtDescripcionPieza);
-            Controls.Add(txtDescripcionTerminado);
-            Controls.Add(label13);
-            Controls.Add(label12);
-            Controls.Add(label11);
-            Controls.Add(label10);
-            Controls.Add(dgvComposicionEmpresa);
-            Controls.Add(btnModificarComposicion);
-            Controls.Add(btnBajaComposicion);
-            Controls.Add(btnAltaComposicion);
-            Controls.Add(nudCantidadComposicion);
-            Controls.Add(cmbNumPiezasComposición);
-            Controls.Add(cmbModeloComposicion);
-            Controls.Add(label7);
-            Controls.Add(label8);
-            Controls.Add(label9);
-            Controls.Add(dgvPiezasEmpresa);
-            Controls.Add(btnModificarPiezas);
-            Controls.Add(btnBajaPiezas);
-            Controls.Add(btnAltaPiezas);
-            Controls.Add(nudStockPiezas);
-            Controls.Add(cmbNumeroPieza);
-            Controls.Add(label4);
-            Controls.Add(label5);
-            Controls.Add(label6);
-            Controls.Add(dgvTerminadosEmpresa);
-            Controls.Add(btnModificarTerminado);
-            Controls.Add(btnBajaTerminado);
-            Controls.Add(btnAltaTerminado);
-            Controls.Add(nudStockTerminado);
-            Controls.Add(cmbModeloTerminado);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Name = "FormConcecionaria";
-            Text = "Form Empresa";
-            ((System.ComponentModel.ISupportInitialize)dgvTerminadosEmpresa).EndInit();
-            ((System.ComponentModel.ISupportInitialize)nudStockTerminado).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgvPiezasEmpresa).EndInit();
-            ((System.ComponentModel.ISupportInitialize)nudStockPiezas).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgvComposicionEmpresa).EndInit();
-            ((System.ComponentModel.ISupportInitialize)nudCantidadComposicion).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(671, 559);
+            this.Controls.Add(this.txtDescripcionPieza);
+            this.Controls.Add(this.txtDescripcionTerminado);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.dgvComposicionEmpresa);
+            this.Controls.Add(this.btnModificarComposicion);
+            this.Controls.Add(this.btnBajaComposicion);
+            this.Controls.Add(this.btnAltaComposicion);
+            this.Controls.Add(this.nudCantidadComposicion);
+            this.Controls.Add(this.cmbNumPiezasComposición);
+            this.Controls.Add(this.cmbModeloComposicion);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.dgvPiezasEmpresa);
+            this.Controls.Add(this.btnModificarPiezas);
+            this.Controls.Add(this.btnBajaPiezas);
+            this.Controls.Add(this.btnAltaPiezas);
+            this.Controls.Add(this.nudStockPiezas);
+            this.Controls.Add(this.cmbNumeroPieza);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dgvTerminadosEmpresa);
+            this.Controls.Add(this.btnModificarTerminado);
+            this.Controls.Add(this.btnBajaTerminado);
+            this.Controls.Add(this.btnAltaTerminado);
+            this.Controls.Add(this.nudStockTerminado);
+            this.Controls.Add(this.cmbModeloTerminado);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "FormConcecionaria";
+            this.Text = "Form Empresa";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTerminadosEmpresa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStockTerminado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPiezasEmpresa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStockPiezas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvComposicionEmpresa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadComposicion)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

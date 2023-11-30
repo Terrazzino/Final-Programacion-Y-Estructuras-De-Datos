@@ -11,8 +11,9 @@ namespace tpFinal.Clases.Empresa
     {
         string archivoTerminados = "StockTerminados.txt";
         string archivoPiezas = "StockPiezas.txt";
-        string archivoComposicion = "ComposicionVehiculo.txt";
+        string? archivoComposicion = "ComposicionVehiculo.txt";
 
+        // comienzo de stock terminado
         public EmpresaStockTerminado[] leerStockTerminado()
         {
             EmpresaStockTerminado[] lista = new EmpresaStockTerminado[1];
@@ -118,7 +119,7 @@ namespace tpFinal.Clases.Empresa
                 using (FileStream fsTemp = new FileStream(archivoTemporal, FileMode.Create, FileAccess.Write))
                 using (StreamWriter writer = new StreamWriter(fsTemp))
                 {
-                    string linea;
+                    string? linea;
                     int contador = 0;
 
                     while ((linea = reader.ReadLine()) != null)
@@ -154,5 +155,151 @@ namespace tpFinal.Clases.Empresa
                 Console.WriteLine($"Error al modificar el archivo: {ex.Message}");
             }
         }
+        // comienzo de stock piezas
+        public EmpresaStockPieza[] leerStockPieza()
+        {
+            EmpresaStockPieza[] lista = new EmpresaStockPieza[1];
+            FileStream fs = new FileStream(archivoPiezas, FileMode.OpenOrCreate, FileAccess.Read);
+            StreamReader br = new StreamReader(fs);
+
+            string? linea = br.ReadLine();
+            int i = 0;
+            while (linea != null)
+            {
+                lista[i] = new EmpresaStockPieza(linea);
+                linea = br.ReadLine();
+                if (linea != null)
+                {
+                    Array.Resize(ref lista, lista.Length + 1);
+                }
+                i++;
+            }
+            br.Close();
+            return lista;
+        }
+
+        public EmpresaStockPieza[] OrdenarStockPieza()
+        {
+            EmpresaStockPieza[] stockPieza = leerStockPieza();
+
+            for (int i = 0; i < stockPieza.Length; i++)
+            {
+                var temp = stockPieza[i];
+                for (int j = i + 1; j < stockPieza.Length; j++)
+                {
+                    if (stockPieza[i].NumeroPieza > stockPieza[j].NumeroPieza)
+                    {
+                        stockPieza[i] = stockPieza[j];
+                        stockPieza[j] = temp;
+                        temp = stockPieza[j];
+
+                        if (stockPieza[i].NumeroPieza == stockPieza[j].NumeroPieza)
+                        {
+                            stockPieza[i] = stockPieza[j];
+                            stockPieza[j] = temp;
+                            temp = stockPieza[j];
+                        }
+                    }
+                }
+
+            }
+            return stockPieza;
+        }
+
+        public void GuardarStockPieza(EmpresaStockPieza unaPieza)
+        {
+            FileStream fs = new FileStream(archivoPiezas, FileMode.Append);
+            StreamWriter sw = new StreamWriter(fs);
+
+            sw.WriteLine(unaPieza.ObtenerRegistroStockPieza());
+            sw.Close();
+        }
+
+        public void BajaStockPieza(int seleccionado)
+        {
+            string output = string.Empty;
+
+            FileStream fs = new FileStream(archivoPiezas, FileMode.OpenOrCreate, FileAccess.Read);
+            using (StreamReader reader = new StreamReader(fs))
+            {
+                string? linea = reader.ReadLine();
+                int contador = 0;
+
+                while (linea != null)
+                {
+
+                    if (seleccionado != contador)
+                    {
+                        output += linea + Environment.NewLine;
+                    }
+                    contador++;
+
+                    linea = reader.ReadLine();
+                }
+
+            }
+
+            fs.Close();
+
+            fs = new FileStream(archivoPiezas, FileMode.Truncate, FileAccess.Write);
+            using (StreamWriter writer = new StreamWriter(fs))
+            {
+                writer.Write(output);
+            }
+            fs.Close();
+
+        }
+
+        public void ModificarStockPieza(int numeroPieza, string descripcionPieza, int stockPieza, int seleccionado)
+        {
+            string archivoTemporal = "tempStockPieza.txt";
+
+            try
+            {
+                using (FileStream fs = new FileStream(archivoPiezas, FileMode.Open, FileAccess.Read))
+                using (StreamReader reader = new StreamReader(fs))
+                using (FileStream fsTemp = new FileStream(archivoTemporal, FileMode.Create, FileAccess.Write))
+                using (StreamWriter writer = new StreamWriter(fsTemp))
+                {
+                    string? linea;
+                    int contador = 0;
+
+                    while ((linea = reader.ReadLine()) != null)
+                    {
+                        EmpresaStockPieza unStockPieza = new EmpresaStockPieza(linea);
+
+                        if (seleccionado != contador)
+                        {
+                            writer.WriteLine(linea);
+                        }
+                        else
+                        {
+
+                            unStockPieza.NumeroPieza = numeroPieza;
+                            unStockPieza.DescripcionPieza = descripcionPieza;
+                            unStockPieza.StockPieza = stockPieza;
+
+
+                            writer.WriteLine(unStockPieza.ObtenerRegistroStockPieza());
+
+                        }
+                        contador++;
+                    }
+                }
+
+
+                File.Delete(archivoPiezas);
+                File.Move(archivoTemporal, archivoPiezas);
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine($"Error al modificar el archivo: {ex.Message}");
+            }
+        }
+
+
+
+
     }
 }

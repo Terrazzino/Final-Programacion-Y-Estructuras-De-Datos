@@ -16,11 +16,13 @@ namespace tpFinal
     {
         GestorEmpresa gestorEmpresa;
         int seleccionadoStockTerminados = 0;
+        int seleccionadoStockPiezas = 0;
         public FormConcecionaria()
         {
             InitializeComponent();
             gestorEmpresa = new GestorEmpresa();
             MostrarStockTerminado();
+            MostrarStockPieza();
         }
 
         private void btnAltaTerminado_Click(object sender, EventArgs e)
@@ -69,6 +71,55 @@ namespace tpFinal
 
                 gestorEmpresa.ModificarStockTerminado(numeroModelo, descripcionModelo, stockTerminado, seleccionadoStockTerminados);
                 MostrarStockTerminado();
+            }
+        }
+
+        private void btnAltaPiezas_Click(object sender, EventArgs e)
+        {
+            int numeroPieza = Convert.ToInt32(cmbNumeroPieza.SelectedIndex+1);
+            string descripcionPieza = txtDescripcionPieza.Text;
+            int stockPieza = Convert.ToInt32(nudStockPiezas.Value);
+
+            EmpresaStockPieza nuevoStockPieza = new EmpresaStockPieza(numeroPieza, descripcionPieza, stockPieza);
+            gestorEmpresa.GuardarStockPieza(nuevoStockPieza);
+            MostrarStockPieza();
+        }
+        public void MostrarStockPieza()
+        {
+            this.dgvPiezasEmpresa.DataSource = null;
+            this.dgvPiezasEmpresa.DataSource = gestorEmpresa.leerStockPieza();
+        }
+
+        private void dgvPiezasEmpresa_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            seleccionadoStockPiezas = e.RowIndex;
+
+            cmbNumeroPieza.Text = dgvPiezasEmpresa.Rows[seleccionadoStockPiezas].Cells[0].Value.ToString();
+            txtDescripcionPieza.Text = dgvPiezasEmpresa.Rows[seleccionadoStockPiezas].Cells[1].Value.ToString();
+            nudStockPiezas.Text = dgvPiezasEmpresa.Rows[seleccionadoStockPiezas].Cells[2].Value.ToString();
+        }
+
+        private void btnBajaPiezas_Click(object sender, EventArgs e)
+        {
+            if (seleccionadoStockPiezas != -1)
+            {
+                gestorEmpresa.BajaStockPieza(seleccionadoStockPiezas);
+
+                MostrarStockPieza();
+            }
+        }
+
+        private void btnModificarPiezas_Click(object sender, EventArgs e)
+        {
+            if (seleccionadoStockPiezas != -1)
+            {
+                int numeroPieza = int.Parse(cmbNumeroPieza.SelectedIndex.ToString()) + 1;
+                string descripcionPieza = txtDescripcionPieza.Text;
+                int stockPieza = Convert.ToInt32(nudStockPiezas.Value);
+
+
+                gestorEmpresa.ModificarStockPieza(numeroPieza, descripcionPieza, stockPieza, seleccionadoStockPiezas);
+                MostrarStockPieza();
             }
         }
     }
