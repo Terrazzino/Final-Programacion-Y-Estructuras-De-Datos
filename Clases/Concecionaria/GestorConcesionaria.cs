@@ -77,7 +77,7 @@ namespace tpFinal.Clases.Concecionaria
             FileStream fs = new FileStream(archivo, FileMode.OpenOrCreate, FileAccess.Read);
             using (StreamReader reader = new StreamReader(fs))
             {
-                string linea = reader.ReadLine();
+                string? linea = reader.ReadLine();
                 int contador = 0;
 
                 while (linea != null)
@@ -116,7 +116,7 @@ namespace tpFinal.Clases.Concecionaria
                 using (FileStream fsTemp = new FileStream(archivoTemporal, FileMode.Create, FileAccess.Write))
                 using (StreamWriter writer = new StreamWriter(fsTemp))
                 {
-                    string linea;
+                    string? linea;
                     int contador = 0;
 
                     while ((linea = reader.ReadLine()) != null)

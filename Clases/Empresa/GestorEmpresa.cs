@@ -11,8 +11,9 @@ namespace tpFinal.Clases.Empresa
     {
         string archivoTerminados = "StockTerminados.txt";
         string archivoPiezas = "StockPiezas.txt";
-        string archivoComposicion = "ComposicionVehiculo.txt";
+        string? archivoComposicion = "ComposicionVehiculo.txt";
 
+        // comienzo de stock terminado
         public EmpresaStockTerminado[] leerStockTerminado()
         {
             EmpresaStockTerminado[] lista = new EmpresaStockTerminado[1];
@@ -119,7 +120,7 @@ namespace tpFinal.Clases.Empresa
                 using (FileStream fsTemp = new FileStream(archivoTemporal, FileMode.Create, FileAccess.Write))
                 using (StreamWriter writer = new StreamWriter(fsTemp))
                 {
-                    string linea;
+                    string? linea;
                     int contador = 0;
 
                     while ((linea = reader.ReadLine()) != null)
@@ -155,8 +156,12 @@ namespace tpFinal.Clases.Empresa
                 Console.WriteLine($"Error al modificar el archivo: {ex.Message}");
             }
         }
+<<<<<<< HEAD
 
         // Comienzo de stock piezas
+=======
+        // comienzo de stock piezas
+>>>>>>> 42f71fd560e8d5384049fdacb635add865cf6384
         public EmpresaStockPieza[] leerStockPieza()
         {
             EmpresaStockPieza[] lista = new EmpresaStockPieza[1];
@@ -300,6 +305,7 @@ namespace tpFinal.Clases.Empresa
         }
 
 
+<<<<<<< HEAD
         // Comienzo de composicion vehiculo
 
         public EmpresaComposicionVehiculos[] leerComposicionVehiculos()
@@ -415,5 +421,9 @@ namespace tpFinal.Clases.Empresa
                 Console.WriteLine($"Error al modificar el archivo: {ex.Message}");
             }
         }
+=======
+
+
+>>>>>>> 42f71fd560e8d5384049fdacb635add865cf6384
     }
 }

@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Gy9WhcQC5vFlUzxwPUOytdp5oFQRlTnZ7haJ1KTDNJsvoIai3GpXPjb92KerkVTSKiCk3y6zj9hKPGTvmDf1Fw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ulises\\Desktop\\FINALPEDRO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj",
+=======
+  "dgSpecHash": "/+STVUq7VE6JPP2yf3R9jey63/VZp7p2TQCdtRTfCrI5hd8eY9b2QXfAPSKB+aNtJUp/v3f6jsZnHAaKXJBoBw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ulises\\Desktop\\FINAL PEDROO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj",
+>>>>>>> 42f71fd560e8d5384049fdacb635add865cf6384
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -17,17 +17,26 @@ namespace tpFinal
         GestorEmpresa gestorEmpresa;
         int seleccionadoStockTerminados = 0;
         int seleccionadoStockPiezas = 0;
+<<<<<<< HEAD
         int seleccionadoComposicion = 0;
+=======
+>>>>>>> 42f71fd560e8d5384049fdacb635add865cf6384
         public FormConcecionaria()
         {
             InitializeComponent();
             gestorEmpresa = new GestorEmpresa();
             MostrarStockTerminado();
             MostrarStockPieza();
+<<<<<<< HEAD
             MostrarComposicion();
         }
 
         // STOCK TERMINADO
+=======
+        }
+
+        // TERMINADOS
+>>>>>>> 42f71fd560e8d5384049fdacb635add865cf6384
 
         private void btnAltaTerminado_Click(object sender, EventArgs e)
         {
@@ -79,6 +88,25 @@ namespace tpFinal
         }
 
         // PIEZAS 
+<<<<<<< HEAD
+=======
+        private void btnAltaPiezas_Click(object sender, EventArgs e)
+        {
+            int numeroPieza = Convert.ToInt32(cmbNumeroPieza.SelectedIndex+1);
+            string descripcionPieza = txtDescripcionPieza.Text;
+            int stockPieza = Convert.ToInt32(nudStockPiezas.Value);
+
+            EmpresaStockPieza nuevoStockPieza = new EmpresaStockPieza(numeroPieza, descripcionPieza, stockPieza);
+            gestorEmpresa.GuardarStockPieza(nuevoStockPieza);
+            MostrarStockPieza();
+        }
+        public void MostrarStockPieza()
+        {
+            this.dgvPiezasEmpresa.DataSource = null;
+            this.dgvPiezasEmpresa.DataSource = gestorEmpresa.leerStockPieza();
+        }
+
+>>>>>>> 42f71fd560e8d5384049fdacb635add865cf6384
         private void dgvPiezasEmpresa_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             seleccionadoStockPiezas = e.RowIndex;
@@ -88,6 +116,7 @@ namespace tpFinal
             nudStockPiezas.Text = dgvPiezasEmpresa.Rows[seleccionadoStockPiezas].Cells[2].Value.ToString();
         }
 
+<<<<<<< HEAD
         private void btnAltaPiezas_Click(object sender, EventArgs e)
         {
             int numeroPieza = Convert.ToInt32(cmbNumeroPieza.SelectedIndex + 1);
@@ -99,6 +128,8 @@ namespace tpFinal
             MostrarStockPieza();
         }
 
+=======
+>>>>>>> 42f71fd560e8d5384049fdacb635add865cf6384
         private void btnBajaPiezas_Click(object sender, EventArgs e)
         {
             if (seleccionadoStockPiezas != -1)
@@ -122,6 +153,7 @@ namespace tpFinal
                 MostrarStockPieza();
             }
         }
+<<<<<<< HEAD
 
         public void MostrarStockPieza()
         {
@@ -180,5 +212,7 @@ namespace tpFinal
             this.dgvComposicionEmpresa.DataSource = null;
             this.dgvComposicionEmpresa.DataSource = gestorEmpresa.leerComposicionVehiculos();
         }
+=======
+>>>>>>> 42f71fd560e8d5384049fdacb635add865cf6384
     }
 }

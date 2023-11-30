@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Ulises\\Desktop\\FINALPEDRO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\Ulises\\Desktop\\FINALPEDRO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj",
         "packagesPath": "C:\\Users\\Ulises\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Ulises\\Desktop\\FINALPEDRO\\Final-Programacion-Y-Estructuras-De-Datos\\obj\\",
+=======
+    "C:\\Users\\Ulises\\Desktop\\FINAL PEDROO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ulises\\Desktop\\FINAL PEDROO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ulises\\Desktop\\FINAL PEDROO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj",
+        "projectName": "tpFinal",
+        "projectPath": "C:\\Users\\Ulises\\Desktop\\FINAL PEDROO\\Final-Programacion-Y-Estructuras-De-Datos\\tpFinal.csproj",
+        "packagesPath": "C:\\Users\\Ulises\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ulises\\Desktop\\FINAL PEDROO\\Final-Programacion-Y-Estructuras-De-Datos\\obj\\",
+>>>>>>> 42f71fd560e8d5384049fdacb635add865cf6384
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ulises\\AppData\\Roaming\\NuGet\\NuGet.Config",
