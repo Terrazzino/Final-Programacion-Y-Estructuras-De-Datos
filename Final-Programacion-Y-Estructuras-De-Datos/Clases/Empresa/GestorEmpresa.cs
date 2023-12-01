@@ -36,9 +36,10 @@ namespace tpFinal.Clases.Empresa
             return lista;
         }
 
-        /*public EmpresaStockTerminado[] OrdenarStockTerminado()
+        public EmpresaStockTerminado[] OrdenarStockTerminado()
         {
             EmpresaStockTerminado[] stockTerminados = leerStockTerminado();
+            string archivoOrdenado = "terminadosStock.txt";
 
             for (int i = 0; i < stockTerminados.Length; i++)
             {
@@ -50,19 +51,25 @@ namespace tpFinal.Clases.Empresa
                         stockTerminados[i] = stockTerminados[j];
                         stockTerminados[j] = temp;
                         temp = stockTerminados[j];
-
-                        if (stockTerminados[i].NumeroModelo == stockTerminados[j].NumeroModelo)
-                        {
-                            stockTerminados[i] = stockTerminados[j];
-                            stockTerminados[j] = temp;
-                            temp = stockTerminados[j];
-                        }
                     }
                 }
 
             }
+            File.Delete(archivoOrdenado);
+            FileStream fs = new FileStream(archivoOrdenado, FileMode.Append);
+            StreamWriter sw = new StreamWriter(fs);
+
+            foreach (EmpresaStockTerminado item in stockTerminados)
+            {
+                sw.WriteLine(item.ObtenerRegistroStockTerminado());
+            }
+            sw.Close();
+            File.Delete(archivoTerminados);
+            File.Move(archivoOrdenado, archivoTerminados);
+
             return stockTerminados;
-        }*/
+
+        }
 
         public void GuardarStockTerminado(EmpresaStockTerminado unPedido)
         {
@@ -180,9 +187,10 @@ namespace tpFinal.Clases.Empresa
             return lista;
         }
 
-        /*public EmpresaStockPieza[] OrdenarStockPieza()
+        public EmpresaStockPieza[] OrdenarStockPieza()
         {
             EmpresaStockPieza[] stockPieza = leerStockPieza();
+            string archivoOrdenado = "piezasStock.txt";
 
             for (int i = 0; i < stockPieza.Length; i++)
             {
@@ -194,19 +202,24 @@ namespace tpFinal.Clases.Empresa
                         stockPieza[i] = stockPieza[j];
                         stockPieza[j] = temp;
                         temp = stockPieza[j];
-
-                        if (stockPieza[i].NumeroPieza == stockPieza[j].NumeroPieza)
-                        {
-                            stockPieza[i] = stockPieza[j];
-                            stockPieza[j] = temp;
-                            temp = stockPieza[j];
-                        }
                     }
                 }
 
             }
+            File.Delete(archivoOrdenado);
+            FileStream fs = new FileStream(archivoOrdenado, FileMode.Append);
+            StreamWriter sw = new StreamWriter(fs);
+
+            foreach (EmpresaStockPieza item in stockPieza)
+            {
+                sw.WriteLine(item.ObtenerRegistroStockPieza());
+            }
+            sw.Close();
+            File.Delete(archivoPiezas);
+            File.Move(archivoOrdenado, archivoPiezas);
+
             return stockPieza;
-        }*/
+        }
 
         public void GuardarStockPieza(EmpresaStockPieza unaPieza)
         {
@@ -367,6 +380,40 @@ namespace tpFinal.Clases.Empresa
             }
             fs.Close();
 
+        }
+
+        public EmpresaComposicionVehiculos[] OrdenarComposicionVehiculo()
+        {
+            EmpresaComposicionVehiculos[] composicionVehiculos = leerComposicionVehiculos();
+            string archivoOrdenado = "composicionVehiculos.txt";
+
+            for (int i = 0; i < composicionVehiculos.Length; i++)
+            {
+                var temp = composicionVehiculos[i];
+                for (int j = i + 1; j < composicionVehiculos.Length; j++)
+                {
+                    if (composicionVehiculos[i].NumeroModeloComposicion > composicionVehiculos[j].NumeroModeloComposicion)
+                    {
+                        composicionVehiculos[i] = composicionVehiculos[j];
+                        composicionVehiculos[j] = temp;
+                        temp = composicionVehiculos[j];
+                    }
+                }
+
+            }
+            File.Delete(archivoOrdenado);
+            FileStream fs = new FileStream(archivoOrdenado, FileMode.Append);
+            StreamWriter sw = new StreamWriter(fs);
+
+            foreach (EmpresaComposicionVehiculos item in composicionVehiculos)
+            {
+                sw.WriteLine(item.ObtenerRegistroComposicionVehiculos());
+            }
+            sw.Close();
+            File.Delete(archivoComposicion);
+            File.Move(archivoOrdenado, archivoComposicion);
+
+            return composicionVehiculos;
         }
 
         public void ModificarComposicion(int numeroModelo, int numeroPiezas, int cantidadUsar, int seleccionado)

@@ -94,7 +94,6 @@ namespace tpFinal
             else
             {
                 MessageBox.Show("Debe seleccionar un campo y todos los campos deben estar completos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
             }
         }
     }

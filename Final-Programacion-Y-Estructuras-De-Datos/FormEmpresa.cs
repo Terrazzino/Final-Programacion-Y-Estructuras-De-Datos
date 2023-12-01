@@ -38,6 +38,7 @@ namespace tpFinal
 
                 EmpresaStockTerminado nuevoStockTerminado = new EmpresaStockTerminado(numeroModelo, descripcionModelo, stockModelo);
                 gestorEmpresa.GuardarStockTerminado(nuevoStockTerminado);
+                gestorEmpresa.OrdenarStockTerminado();
                 MostrarStockTerminado();
                 seleccionadoStockTerminados = -1;
             }
@@ -88,6 +89,7 @@ namespace tpFinal
 
 
                 gestorEmpresa.ModificarStockTerminado(numeroModelo, descripcionModelo, stockTerminado, seleccionadoStockTerminados);
+                gestorEmpresa.OrdenarStockTerminado();
                 MostrarStockTerminado();
                 seleccionadoStockTerminados = -1;
             }
@@ -108,6 +110,7 @@ namespace tpFinal
 
                 EmpresaStockPieza nuevoStockPieza = new EmpresaStockPieza(numeroPieza, descripcionPieza, stockPieza);
                 gestorEmpresa.GuardarStockPieza(nuevoStockPieza);
+                gestorEmpresa.OrdenarStockPieza();
                 MostrarStockPieza();
                 seleccionadoStockPiezas = -1;
             }
@@ -142,6 +145,7 @@ namespace tpFinal
 
 
                 gestorEmpresa.ModificarStockPieza(numeroPieza, descripcionPieza, stockPieza, seleccionadoStockPiezas);
+                gestorEmpresa.OrdenarStockPieza();
                 MostrarStockPieza();
                 seleccionadoStockPiezas = -1;
             }
@@ -186,6 +190,7 @@ namespace tpFinal
 
                 EmpresaComposicionVehiculos nuevaComposicion = new EmpresaComposicionVehiculos(numeroModelo, numeroPiezas, cantidadUsar);
                 gestorEmpresa.GuardarComposicionVehi(nuevaComposicion);
+                gestorEmpresa.OrdenarComposicionVehiculo();
                 MostrarComposicion();
                 seleccionadoComposicion = -1;
             }
@@ -221,6 +226,7 @@ namespace tpFinal
 
 
                 gestorEmpresa.ModificarComposicion(numeroModelo, numeroPiezas, cantidadUsar, seleccionadoComposicion);
+                gestorEmpresa.OrdenarComposicionVehiculo();
                 MostrarComposicion();
                 seleccionadoComposicion = -1;
             }
