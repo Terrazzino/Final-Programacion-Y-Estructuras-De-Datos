@@ -36,7 +36,7 @@ namespace tpFinal.Clases.Empresa
             return lista;
         }
 
-        public EmpresaStockTerminado[] OrdenarStockTerminado()
+        /*public EmpresaStockTerminado[] OrdenarStockTerminado()
         {
             EmpresaStockTerminado[] stockTerminados = leerStockTerminado();
 
@@ -62,7 +62,7 @@ namespace tpFinal.Clases.Empresa
 
             }
             return stockTerminados;
-        }
+        }*/
 
         public void GuardarStockTerminado(EmpresaStockTerminado unPedido)
         {
@@ -119,7 +119,7 @@ namespace tpFinal.Clases.Empresa
                 using (FileStream fsTemp = new FileStream(archivoTemporal, FileMode.Create, FileAccess.Write))
                 using (StreamWriter writer = new StreamWriter(fsTemp))
                 {
-                    string linea;
+                    string? linea;
                     int contador = 0;
 
                     while ((linea = reader.ReadLine()) != null)
@@ -176,10 +176,11 @@ namespace tpFinal.Clases.Empresa
                 i++;
             }
             br.Close();
+
             return lista;
         }
 
-        public EmpresaStockPieza[] OrdenarStockPieza()
+        /*public EmpresaStockPieza[] OrdenarStockPieza()
         {
             EmpresaStockPieza[] stockPieza = leerStockPieza();
 
@@ -205,7 +206,7 @@ namespace tpFinal.Clases.Empresa
 
             }
             return stockPieza;
-        }
+        }*/
 
         public void GuardarStockPieza(EmpresaStockPieza unaPieza)
         {

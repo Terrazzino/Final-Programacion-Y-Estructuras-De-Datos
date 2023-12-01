@@ -9,6 +9,8 @@ namespace tpFinal.Clases.Concecionaria
     public class GestorConcesionaria
     {
         string archivo = "Pedidos.txt";
+        
+
 
         public Concesionaria[] leerConcesionarias()
         {
@@ -35,37 +37,42 @@ namespace tpFinal.Clases.Concecionaria
         public Concesionaria[] Ordenar()
         {
             Concesionaria[] pedidos = leerConcesionarias();
+            string archivoOrdenado = "PedidosOrdenados.txt";
 
             for (int i = 0; i < pedidos.Length; i++)
             {
                 var temp = pedidos[i];
                 for (int j = i + 1; j < pedidos.Length; j++)
                 {
-                    if (pedidos[i].NumeroModelo > pedidos[j].NumeroModelo)
+                    if (pedidos[i].NumeroConcecionaria > pedidos[j].NumeroConcecionaria)
                     {
                         pedidos[i] = pedidos[j];
                         pedidos[j] = temp;
                         temp = pedidos[j];
-
-                        if (pedidos[i].NumeroModelo == pedidos[j].NumeroModelo &&
-                            pedidos[i].NumeroConcecionaria > pedidos[j].NumeroConcecionaria)
-                        {
-                            pedidos[i] = pedidos[j];
-                            pedidos[j] = temp;
-                            temp = pedidos[j];
-                        }
                     }
                 }
-
             }
+
+            File.Delete(archivoOrdenado);
+            FileStream fs = new FileStream(archivoOrdenado, FileMode.Append);
+            StreamWriter sw = new StreamWriter(fs);
+
+            foreach (Concesionaria item in pedidos)
+            {
+                sw.WriteLine(item.ObtenerRegistro());
+            }
+            sw.Close();
+            File.Delete(archivo);
+            File.Move(archivoOrdenado,archivo);
+
             return pedidos;
         }
 
         public void GuardarPedido(Concesionaria unPedido)
         {
+            
             FileStream fs = new FileStream(archivo, FileMode.Append);
             StreamWriter sw = new StreamWriter(fs);
-
             sw.WriteLine(unPedido.ObtenerRegistro());
             sw.Close();
         }
@@ -77,7 +84,7 @@ namespace tpFinal.Clases.Concecionaria
             FileStream fs = new FileStream(archivo, FileMode.OpenOrCreate, FileAccess.Read);
             using (StreamReader reader = new StreamReader(fs))
             {
-                string linea = reader.ReadLine();
+                string? linea = reader.ReadLine();
                 int contador = 0;
 
                 while (linea != null)
@@ -116,7 +123,7 @@ namespace tpFinal.Clases.Concecionaria
                 using (FileStream fsTemp = new FileStream(archivoTemporal, FileMode.Create, FileAccess.Write))
                 using (StreamWriter writer = new StreamWriter(fsTemp))
                 {
-                    string linea;
+                    string? linea;
                     int contador = 0;
 
                     while ((linea = reader.ReadLine()) != null)
@@ -151,6 +158,7 @@ namespace tpFinal.Clases.Concecionaria
 
                 Console.WriteLine($"Error al modificar el archivo: {ex.Message}");
             }
+
         }
 
 
