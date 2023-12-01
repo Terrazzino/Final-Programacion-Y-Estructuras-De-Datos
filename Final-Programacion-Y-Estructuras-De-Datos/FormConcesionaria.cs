@@ -34,9 +34,10 @@ namespace tpFinal
 
                 Concesionaria nuevoPedido = new Concesionaria(numeroModelo, numeroConcesionaria, cantidadPedido);
                 gestorConcesionaria.GuardarPedido(nuevoPedido);
+                gestorConcesionaria.Ordenar();
                 MostrarPedido();
                 seleccionado = -1;
-                gestorConcesionaria.Ordenar();
+                
             }
             else
             {
@@ -66,7 +67,6 @@ namespace tpFinal
             if (seleccionado != -1)
             {
                 gestorConcesionaria.Baja(seleccionado);
-                gestorConcesionaria.Ordenar();
                 MostrarPedido();
                 seleccionado = -1;
 
@@ -87,8 +87,8 @@ namespace tpFinal
 
 
                 gestorConcesionaria.Modificar(numeroModelo, numeroConcesionaria, cantidadPedido, seleccionado);
-                MostrarPedido();
                 gestorConcesionaria.Ordenar();
+                MostrarPedido();
                 seleccionado = -1;
             }
             else
