@@ -45,7 +45,6 @@ namespace tpFinal.Clases.Reporte
 
 
 
-
         public void GuardarReportePedidos(ReportePedidos unReporte)
         {
             FileStream fs = new FileStream(archivoReportePedidos, FileMode.Append);
@@ -136,6 +135,11 @@ namespace tpFinal.Clases.Reporte
 
             fs.Close();
 
+        }
+
+        public void LimpiarReporte()
+        {
+            File.Delete(archivoReportePedidos);
         }
     }
 }

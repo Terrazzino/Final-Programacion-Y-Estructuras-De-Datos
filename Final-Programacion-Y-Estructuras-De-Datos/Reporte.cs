@@ -23,6 +23,7 @@ namespace tpFinal
 
             InitializeComponent();
             gestorReportes = new GestorReportes();
+            gestorReportes.LimpiarReporte();
         }
 
         private void Reporte_Load(object sender, EventArgs e)
