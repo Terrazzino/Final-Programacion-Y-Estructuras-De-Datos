@@ -59,7 +59,6 @@
             label10 = new Label();
             label11 = new Label();
             label12 = new Label();
-            label13 = new Label();
             txtDescripcionTerminado = new TextBox();
             txtDescripcionPieza = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvTerminadosEmpresa).BeginInit();
@@ -73,17 +72,17 @@
             // dgvTerminadosEmpresa
             // 
             dgvTerminadosEmpresa.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTerminadosEmpresa.Location = new Point(320, 64);
+            dgvTerminadosEmpresa.Location = new Point(320, 12);
             dgvTerminadosEmpresa.Name = "dgvTerminadosEmpresa";
             dgvTerminadosEmpresa.RowHeadersWidth = 51;
             dgvTerminadosEmpresa.RowTemplate.Height = 29;
-            dgvTerminadosEmpresa.Size = new Size(428, 160);
+            dgvTerminadosEmpresa.Size = new Size(459, 202);
             dgvTerminadosEmpresa.TabIndex = 19;
             dgvTerminadosEmpresa.CellClick += dgvTerminadosEmpresa_CellClick;
             // 
             // btnModificarTerminado
             // 
-            btnModificarTerminado.Location = new Point(208, 195);
+            btnModificarTerminado.Location = new Point(208, 183);
             btnModificarTerminado.Name = "btnModificarTerminado";
             btnModificarTerminado.Size = new Size(94, 29);
             btnModificarTerminado.TabIndex = 18;
@@ -93,7 +92,7 @@
             // 
             // btnBajaTerminado
             // 
-            btnBajaTerminado.Location = new Point(208, 141);
+            btnBajaTerminado.Location = new Point(208, 129);
             btnBajaTerminado.Name = "btnBajaTerminado";
             btnBajaTerminado.Size = new Size(94, 29);
             btnBajaTerminado.TabIndex = 17;
@@ -103,7 +102,7 @@
             // 
             // btnAltaTerminado
             // 
-            btnAltaTerminado.Location = new Point(208, 87);
+            btnAltaTerminado.Location = new Point(208, 75);
             btnAltaTerminado.Name = "btnAltaTerminado";
             btnAltaTerminado.Size = new Size(94, 29);
             btnAltaTerminado.TabIndex = 16;
@@ -113,7 +112,7 @@
             // 
             // nudStockTerminado
             // 
-            nudStockTerminado.Location = new Point(12, 195);
+            nudStockTerminado.Location = new Point(12, 183);
             nudStockTerminado.Name = "nudStockTerminado";
             nudStockTerminado.Size = new Size(181, 27);
             nudStockTerminado.TabIndex = 15;
@@ -122,7 +121,7 @@
             // 
             cmbModeloTerminado.FormattingEnabled = true;
             cmbModeloTerminado.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            cmbModeloTerminado.Location = new Point(12, 87);
+            cmbModeloTerminado.Location = new Point(12, 75);
             cmbModeloTerminado.Name = "cmbModeloTerminado";
             cmbModeloTerminado.Size = new Size(181, 28);
             cmbModeloTerminado.TabIndex = 13;
@@ -130,7 +129,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 172);
+            label3.Location = new Point(12, 160);
             label3.Name = "label3";
             label3.Size = new Size(45, 20);
             label3.TabIndex = 12;
@@ -139,7 +138,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 64);
+            label2.Location = new Point(12, 52);
             label2.Name = "label2";
             label2.Size = new Size(140, 20);
             label2.TabIndex = 11;
@@ -148,7 +147,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 118);
+            label1.Location = new Point(12, 106);
             label1.Name = "label1";
             label1.Size = new Size(87, 20);
             label1.TabIndex = 10;
@@ -157,17 +156,17 @@
             // dgvPiezasEmpresa
             // 
             dgvPiezasEmpresa.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvPiezasEmpresa.Location = new Point(320, 303);
+            dgvPiezasEmpresa.Location = new Point(320, 251);
             dgvPiezasEmpresa.Name = "dgvPiezasEmpresa";
             dgvPiezasEmpresa.RowHeadersWidth = 51;
             dgvPiezasEmpresa.RowTemplate.Height = 29;
-            dgvPiezasEmpresa.Size = new Size(428, 160);
+            dgvPiezasEmpresa.Size = new Size(459, 216);
             dgvPiezasEmpresa.TabIndex = 29;
             dgvPiezasEmpresa.CellClick += dgvPiezasEmpresa_CellClick;
             // 
             // btnModificarPiezas
             // 
-            btnModificarPiezas.Location = new Point(208, 434);
+            btnModificarPiezas.Location = new Point(208, 424);
             btnModificarPiezas.Name = "btnModificarPiezas";
             btnModificarPiezas.Size = new Size(94, 29);
             btnModificarPiezas.TabIndex = 28;
@@ -177,7 +176,7 @@
             // 
             // btnBajaPiezas
             // 
-            btnBajaPiezas.Location = new Point(208, 380);
+            btnBajaPiezas.Location = new Point(208, 370);
             btnBajaPiezas.Name = "btnBajaPiezas";
             btnBajaPiezas.Size = new Size(94, 29);
             btnBajaPiezas.TabIndex = 27;
@@ -187,7 +186,7 @@
             // 
             // btnAltaPiezas
             // 
-            btnAltaPiezas.Location = new Point(208, 326);
+            btnAltaPiezas.Location = new Point(208, 316);
             btnAltaPiezas.Name = "btnAltaPiezas";
             btnAltaPiezas.Size = new Size(94, 29);
             btnAltaPiezas.TabIndex = 26;
@@ -197,7 +196,7 @@
             // 
             // nudStockPiezas
             // 
-            nudStockPiezas.Location = new Point(12, 434);
+            nudStockPiezas.Location = new Point(12, 424);
             nudStockPiezas.Name = "nudStockPiezas";
             nudStockPiezas.Size = new Size(181, 27);
             nudStockPiezas.TabIndex = 25;
@@ -206,7 +205,7 @@
             // 
             cmbNumeroPieza.FormattingEnabled = true;
             cmbNumeroPieza.Items.AddRange(new object[] { "1 - Carroceria (1)", "2 - Motor (1)", "3 - Caja de Cambios (1)", "4 - Puertas (2 o 4)", "5 - Ruedas (4)" });
-            cmbNumeroPieza.Location = new Point(12, 326);
+            cmbNumeroPieza.Location = new Point(12, 316);
             cmbNumeroPieza.Name = "cmbNumeroPieza";
             cmbNumeroPieza.Size = new Size(181, 28);
             cmbNumeroPieza.TabIndex = 23;
@@ -214,7 +213,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(19, 443);
+            label4.Location = new Point(12, 401);
             label4.Name = "label4";
             label4.Size = new Size(45, 20);
             label4.TabIndex = 22;
@@ -223,7 +222,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 303);
+            label5.Location = new Point(12, 293);
             label5.Name = "label5";
             label5.Size = new Size(123, 20);
             label5.TabIndex = 21;
@@ -232,7 +231,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(12, 357);
+            label6.Location = new Point(12, 347);
             label6.Name = "label6";
             label6.Size = new Size(87, 20);
             label6.TabIndex = 20;
@@ -241,17 +240,17 @@
             // dgvComposicionEmpresa
             // 
             dgvComposicionEmpresa.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvComposicionEmpresa.Location = new Point(327, 553);
+            dgvComposicionEmpresa.Location = new Point(320, 501);
             dgvComposicionEmpresa.Name = "dgvComposicionEmpresa";
             dgvComposicionEmpresa.RowHeadersWidth = 51;
             dgvComposicionEmpresa.RowTemplate.Height = 29;
-            dgvComposicionEmpresa.Size = new Size(428, 160);
+            dgvComposicionEmpresa.Size = new Size(452, 216);
             dgvComposicionEmpresa.TabIndex = 39;
             dgvComposicionEmpresa.CellClick += dgvComposicionEmpresa_CellClick;
             // 
             // btnModificarComposicion
             // 
-            btnModificarComposicion.Location = new Point(215, 684);
+            btnModificarComposicion.Location = new Point(215, 671);
             btnModificarComposicion.Name = "btnModificarComposicion";
             btnModificarComposicion.Size = new Size(94, 29);
             btnModificarComposicion.TabIndex = 38;
@@ -261,7 +260,7 @@
             // 
             // btnBajaComposicion
             // 
-            btnBajaComposicion.Location = new Point(215, 630);
+            btnBajaComposicion.Location = new Point(215, 617);
             btnBajaComposicion.Name = "btnBajaComposicion";
             btnBajaComposicion.Size = new Size(94, 29);
             btnBajaComposicion.TabIndex = 37;
@@ -271,7 +270,7 @@
             // 
             // btnAltaComposicion
             // 
-            btnAltaComposicion.Location = new Point(215, 576);
+            btnAltaComposicion.Location = new Point(215, 563);
             btnAltaComposicion.Name = "btnAltaComposicion";
             btnAltaComposicion.Size = new Size(94, 29);
             btnAltaComposicion.TabIndex = 36;
@@ -281,7 +280,7 @@
             // 
             // nudCantidadComposicion
             // 
-            nudCantidadComposicion.Location = new Point(19, 684);
+            nudCantidadComposicion.Location = new Point(19, 671);
             nudCantidadComposicion.Name = "nudCantidadComposicion";
             nudCantidadComposicion.Size = new Size(181, 27);
             nudCantidadComposicion.TabIndex = 35;
@@ -290,7 +289,7 @@
             // 
             cmbNumPiezasComposición.FormattingEnabled = true;
             cmbNumPiezasComposición.Items.AddRange(new object[] { "1 - Carroceria (1)", "2 - Motor (1)", "3 - Caja de Cambios (1)", "4 - Puertas (2 o 4)", "5 - Ruedas (4)" });
-            cmbNumPiezasComposición.Location = new Point(19, 630);
+            cmbNumPiezasComposición.Location = new Point(19, 617);
             cmbNumPiezasComposición.Name = "cmbNumPiezasComposición";
             cmbNumPiezasComposición.Size = new Size(181, 28);
             cmbNumPiezasComposición.TabIndex = 34;
@@ -299,7 +298,7 @@
             // 
             cmbModeloComposicion.FormattingEnabled = true;
             cmbModeloComposicion.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            cmbModeloComposicion.Location = new Point(19, 576);
+            cmbModeloComposicion.Location = new Point(19, 563);
             cmbModeloComposicion.Name = "cmbModeloComposicion";
             cmbModeloComposicion.Size = new Size(181, 28);
             cmbModeloComposicion.TabIndex = 33;
@@ -307,7 +306,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(19, 661);
+            label7.Location = new Point(19, 648);
             label7.Name = "label7";
             label7.Size = new Size(114, 20);
             label7.TabIndex = 32;
@@ -316,7 +315,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(19, 553);
+            label8.Location = new Point(19, 540);
             label8.Name = "label8";
             label8.Size = new Size(140, 20);
             label8.TabIndex = 31;
@@ -325,7 +324,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(19, 607);
+            label9.Location = new Point(19, 594);
             label9.Name = "label9";
             label9.Size = new Size(129, 20);
             label9.TabIndex = 30;
@@ -335,7 +334,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(12, 24);
+            label10.Location = new Point(12, 12);
             label10.Name = "label10";
             label10.Size = new Size(170, 28);
             label10.TabIndex = 40;
@@ -345,7 +344,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(12, 261);
+            label11.Location = new Point(12, 251);
             label11.Name = "label11";
             label11.Size = new Size(129, 28);
             label11.TabIndex = 41;
@@ -355,31 +354,22 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.Location = new Point(12, 514);
+            label12.Location = new Point(12, 501);
             label12.Name = "label12";
             label12.Size = new Size(258, 28);
             label12.TabIndex = 42;
             label12.Text = "Composición de Vehículos";
             // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(12, 411);
-            label13.Name = "label13";
-            label13.Size = new Size(45, 20);
-            label13.TabIndex = 43;
-            label13.Text = "Stock";
-            // 
             // txtDescripcionTerminado
             // 
-            txtDescripcionTerminado.Location = new Point(12, 141);
+            txtDescripcionTerminado.Location = new Point(12, 129);
             txtDescripcionTerminado.Name = "txtDescripcionTerminado";
             txtDescripcionTerminado.Size = new Size(181, 27);
             txtDescripcionTerminado.TabIndex = 44;
             // 
             // txtDescripcionPieza
             // 
-            txtDescripcionPieza.Location = new Point(12, 380);
+            txtDescripcionPieza.Location = new Point(12, 370);
             txtDescripcionPieza.Name = "txtDescripcionPieza";
             txtDescripcionPieza.Size = new Size(181, 27);
             txtDescripcionPieza.TabIndex = 45;
@@ -388,10 +378,9 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(767, 745);
+            ClientSize = new Size(791, 741);
             Controls.Add(txtDescripcionPieza);
             Controls.Add(txtDescripcionTerminado);
-            Controls.Add(label13);
             Controls.Add(label12);
             Controls.Add(label11);
             Controls.Add(label10);
@@ -424,6 +413,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "FormConcecionaria";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form Empresa";
             ((System.ComponentModel.ISupportInitialize)dgvTerminadosEmpresa).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudStockTerminado).EndInit();
@@ -468,7 +458,6 @@
         private Label label10;
         private Label label11;
         private Label label12;
-        private Label label13;
         private TextBox txtDescripcionTerminado;
         private TextBox txtDescripcionPieza;
     }

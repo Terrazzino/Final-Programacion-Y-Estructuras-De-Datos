@@ -27,10 +27,10 @@ namespace tpFinal
             MostrarComposicion();
         }
 
-        //TERMINADOS
+        //********************************************** TERMINADOS ***********************************************
         private void btnAltaTerminado_Click(object sender, EventArgs e)
         {
-            if (cmbModeloTerminado.Text !="" && txtDescripcionTerminado.Text!="" && nudStockTerminado.Value>0)
+            if (cmbModeloTerminado.Text != "" && txtDescripcionTerminado.Text != "" && nudStockTerminado.Value > 0)
             {
                 int numeroModelo = Convert.ToInt32(cmbModeloTerminado.Text);
                 string descripcionModelo = txtDescripcionTerminado.Text;
@@ -75,7 +75,7 @@ namespace tpFinal
             {
                 MessageBox.Show("Seleccione un campo para eliminar!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            
+
 
         }
 
@@ -99,10 +99,10 @@ namespace tpFinal
             }
         }
 
-        //PIEZAS
+        //********************************************** PIEZAS *********************************************
         private void btnAltaPiezas_Click(object sender, EventArgs e)
         {
-            if (cmbNumeroPieza.Text!=""&&txtDescripcionPieza.Text!=""&&nudStockPiezas.Value>0)
+            if (cmbNumeroPieza.Text != "" && txtDescripcionPieza.Text != "" && nudStockPiezas.Value > 0)
             {
                 int numeroPieza = Convert.ToInt32(cmbNumeroPieza.SelectedIndex + 1);
                 string descripcionPieza = txtDescripcionPieza.Text;
@@ -170,7 +170,7 @@ namespace tpFinal
             nudStockPiezas.Text = dgvPiezasEmpresa.Rows[seleccionadoStockPiezas].Cells[2].Value.ToString();
         }
 
-        //COMPOSICION
+        //******************************************** COMPOSICION **********************************************
         private void dgvComposicionEmpresa_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             seleccionadoComposicion = e.RowIndex;
@@ -182,7 +182,7 @@ namespace tpFinal
 
         private void btnAltaComposicion_Click(object sender, EventArgs e)
         {
-            if (cmbModeloComposicion.Text!="" && cmbNumPiezasComposición.Text !="" && nudCantidadComposicion.Value>0)
+            if (cmbModeloComposicion.Text != "" && cmbNumPiezasComposición.Text != "" && nudCantidadComposicion.Value > 0)
             {
                 int numeroModelo = Convert.ToInt32(cmbModeloComposicion.SelectedIndex + 1);
                 int numeroPiezas = Convert.ToInt32(cmbNumPiezasComposición.SelectedIndex + 1);

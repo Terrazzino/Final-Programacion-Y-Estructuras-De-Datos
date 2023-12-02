@@ -45,27 +45,27 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(21, 68);
+            label1.Location = new Point(24, 91);
             label1.Name = "label1";
-            label1.Size = new Size(145, 15);
+            label1.Size = new Size(181, 20);
             label1.TabIndex = 0;
             label1.Text = "Numero de Concesionaria";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(21, 27);
+            label2.Location = new Point(24, 36);
             label2.Name = "label2";
-            label2.Size = new Size(111, 15);
+            label2.Size = new Size(140, 20);
             label2.TabIndex = 1;
             label2.Text = "Numero de Modelo";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(21, 108);
+            label3.Location = new Point(24, 144);
             label3.Name = "label3";
-            label3.Size = new Size(55, 15);
+            label3.Size = new Size(69, 20);
             label3.TabIndex = 2;
             label3.Text = "Cantidad";
             // 
@@ -73,36 +73,32 @@
             // 
             cmbModeloPedidos.FormattingEnabled = true;
             cmbModeloPedidos.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            cmbModeloPedidos.Location = new Point(21, 44);
-            cmbModeloPedidos.Margin = new Padding(3, 2, 3, 2);
+            cmbModeloPedidos.Location = new Point(24, 59);
             cmbModeloPedidos.Name = "cmbModeloPedidos";
-            cmbModeloPedidos.Size = new Size(159, 23);
+            cmbModeloPedidos.Size = new Size(181, 28);
             cmbModeloPedidos.TabIndex = 3;
             // 
             // cmbConcesionariaPedidos
             // 
             cmbConcesionariaPedidos.FormattingEnabled = true;
             cmbConcesionariaPedidos.Items.AddRange(new object[] { "10", "20", "30", "40", "50" });
-            cmbConcesionariaPedidos.Location = new Point(21, 85);
-            cmbConcesionariaPedidos.Margin = new Padding(3, 2, 3, 2);
+            cmbConcesionariaPedidos.Location = new Point(24, 113);
             cmbConcesionariaPedidos.Name = "cmbConcesionariaPedidos";
-            cmbConcesionariaPedidos.Size = new Size(159, 23);
+            cmbConcesionariaPedidos.Size = new Size(181, 28);
             cmbConcesionariaPedidos.TabIndex = 4;
             // 
             // nudCantidadPedidos
             // 
-            nudCantidadPedidos.Location = new Point(21, 125);
-            nudCantidadPedidos.Margin = new Padding(3, 2, 3, 2);
+            nudCantidadPedidos.Location = new Point(24, 167);
             nudCantidadPedidos.Name = "nudCantidadPedidos";
-            nudCantidadPedidos.Size = new Size(158, 23);
+            nudCantidadPedidos.Size = new Size(181, 27);
             nudCantidadPedidos.TabIndex = 5;
             // 
             // btnAltaPedidos
             // 
-            btnAltaPedidos.Location = new Point(192, 44);
-            btnAltaPedidos.Margin = new Padding(3, 2, 3, 2);
+            btnAltaPedidos.Location = new Point(219, 59);
             btnAltaPedidos.Name = "btnAltaPedidos";
-            btnAltaPedidos.Size = new Size(82, 22);
+            btnAltaPedidos.Size = new Size(94, 29);
             btnAltaPedidos.TabIndex = 6;
             btnAltaPedidos.Text = "Alta";
             btnAltaPedidos.UseVisualStyleBackColor = true;
@@ -110,10 +106,9 @@
             // 
             // btnBajaPedidos
             // 
-            btnBajaPedidos.Location = new Point(192, 85);
-            btnBajaPedidos.Margin = new Padding(3, 2, 3, 2);
+            btnBajaPedidos.Location = new Point(219, 113);
             btnBajaPedidos.Name = "btnBajaPedidos";
-            btnBajaPedidos.Size = new Size(82, 22);
+            btnBajaPedidos.Size = new Size(94, 29);
             btnBajaPedidos.TabIndex = 7;
             btnBajaPedidos.Text = "Baja";
             btnBajaPedidos.UseVisualStyleBackColor = true;
@@ -121,10 +116,9 @@
             // 
             // btnModificarPeddidos
             // 
-            btnModificarPeddidos.Location = new Point(192, 125);
-            btnModificarPeddidos.Margin = new Padding(3, 2, 3, 2);
+            btnModificarPeddidos.Location = new Point(219, 167);
             btnModificarPeddidos.Name = "btnModificarPeddidos";
-            btnModificarPeddidos.Size = new Size(82, 22);
+            btnModificarPeddidos.Size = new Size(94, 29);
             btnModificarPeddidos.TabIndex = 8;
             btnModificarPeddidos.Text = "Modificar";
             btnModificarPeddidos.UseVisualStyleBackColor = true;
@@ -133,21 +127,20 @@
             // dgvConcesionariaPedidos
             // 
             dgvConcesionariaPedidos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvConcesionariaPedidos.Location = new Point(290, 27);
-            dgvConcesionariaPedidos.Margin = new Padding(3, 2, 3, 2);
+            dgvConcesionariaPedidos.Location = new Point(331, 36);
             dgvConcesionariaPedidos.Name = "dgvConcesionariaPedidos";
             dgvConcesionariaPedidos.RowHeadersWidth = 51;
             dgvConcesionariaPedidos.RowTemplate.Height = 29;
-            dgvConcesionariaPedidos.Size = new Size(374, 120);
+            dgvConcesionariaPedidos.Size = new Size(457, 160);
             dgvConcesionariaPedidos.TabIndex = 9;
             dgvConcesionariaPedidos.CellClick += dgvConcesionariaPedidos_CellContentClick_1;
             dgvConcesionariaPedidos.CellContentClick += dgvConcesionariaPedidos_CellContentClick_1;
             // 
             // FormConcesionaria
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 171);
+            ClientSize = new Size(800, 228);
             Controls.Add(dgvConcesionariaPedidos);
             Controls.Add(btnModificarPeddidos);
             Controls.Add(btnBajaPedidos);
@@ -158,8 +151,8 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FormConcesionaria";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form Concesionaria";
             ((System.ComponentModel.ISupportInitialize)nudCantidadPedidos).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvConcesionariaPedidos).EndInit();

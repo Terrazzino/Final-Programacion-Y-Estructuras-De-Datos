@@ -11,11 +11,8 @@ namespace tpFinal.Clases.Reporte
 
     public class GestorReportes
     {
-
-
+        //************************************************** REPORTE PEDIDOS ****************************************
         string archivoReportePedidos = "archivoReportePedidos.txt";
-        
-
 
         public int[]cantidad =new int[5];
         public int[] stockInicial = new int[5];
@@ -42,9 +39,6 @@ namespace tpFinal.Clases.Reporte
             return lista;
         }
 
-
-
-
         public void GuardarReportePedidos(ReportePedidos unReporte)
         {
             FileStream fs = new FileStream(archivoReportePedidos, FileMode.Append);
@@ -54,7 +48,7 @@ namespace tpFinal.Clases.Reporte
             sw.Close();
         }
 
-
+        //Unifica la cantidad pedida de cada modelo por las concesionarias
         public void CantidadModelos()
         {
             string archivo = "Pedidos.txt";
@@ -62,7 +56,7 @@ namespace tpFinal.Clases.Reporte
             FileStream fs = new FileStream(archivo, FileMode.OpenOrCreate, FileAccess.Read);
             using (StreamReader reader = new StreamReader(fs))
             {
-                string linea = reader.ReadLine();
+                string? linea = reader.ReadLine();
 
                 while (linea != null)
                 {
@@ -96,6 +90,7 @@ namespace tpFinal.Clases.Reporte
 
         }
 
+        //Unifica la cantidad de cada modelo que posee la empresa
         public void CantidadStockIncial()
         {
             string archivo = "StockTerminados.txt";
@@ -103,7 +98,7 @@ namespace tpFinal.Clases.Reporte
             FileStream fs = new FileStream(archivo, FileMode.OpenOrCreate, FileAccess.Read);
             using (StreamReader reader = new StreamReader(fs))
             {
-                string linea = reader.ReadLine();
+                string? linea = reader.ReadLine();
 
                 while (linea != null)
                 {
@@ -140,6 +135,233 @@ namespace tpFinal.Clases.Reporte
         public void LimpiarReporte()
         {
             File.Delete(archivoReportePedidos);
+        }
+
+        
+
+        //******************************************** REPORTE VEHICULOS ******************************************************************
+
+
+
+        string archivoReporteVehiculos = "archivoReporteVehiculos.txt";
+
+        public int[] cantidadPiezasNecesarias = new int[5];
+        public int[] stockInicialPiezas = new int[5];
+
+        public ReporteVehiculos[] leerReporteVehiculos()
+        {
+            ReporteVehiculos[] lista = new ReporteVehiculos[1];
+            FileStream fs = new FileStream(archivoReporteVehiculos, FileMode.OpenOrCreate, FileAccess.Read);
+            StreamReader br = new StreamReader(fs);
+
+            string? linea = br.ReadLine();
+            int i = 0;
+            while (linea != null)
+            {
+                lista[i] = new ReporteVehiculos(linea);
+                linea = br.ReadLine();
+                if (linea != null)
+                {
+                    Array.Resize(ref lista, lista.Length + 1);
+                }
+                i++;
+            }
+            br.Close();
+            return lista;
+        }
+    
+        public void GuardarReporteVehiculos(ReporteVehiculos unReporte)
+        {
+            FileStream fs = new FileStream(archivoReporteVehiculos, FileMode.Append);
+            StreamWriter sw = new StreamWriter(fs);
+
+            sw.WriteLine(unReporte.ObtenerRegistroReportePedidos());
+            sw.Close();
+        }
+
+        //Unifica la cantidad de piezas necesarias
+        public void CantidadPiezasNecesarias()
+        {
+            string archivo = "archivoReportePedidos.txt";
+
+            FileStream fs = new FileStream(archivo, FileMode.OpenOrCreate, FileAccess.Read);
+            using (StreamReader reader = new StreamReader(fs))
+            {
+                string? linea = reader.ReadLine();
+
+                while (linea != null)
+                {
+                    ReportePedidos piezas = new ReportePedidos(linea);
+
+                    EmpresaComposicionVehiculos composicion = new EmpresaComposicionVehiculos(linea);
+
+                    if (piezas.NumeroModelo==1)
+                    {
+                        if(composicion.NumeroModeloComposicion == 1)
+                        {
+                            cantidadPiezasNecesarias[0] =piezas.CantidadPedida*composicion.CantidadUsarComposicion;
+                        }
+                        if(composicion.NumeroModeloComposicion == 2)
+                        {
+                            cantidadPiezasNecesarias[1] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 3)
+                        {
+                            cantidadPiezasNecesarias[2] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 4)
+                        {
+                            cantidadPiezasNecesarias[3] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 5)
+                        {
+                            cantidadPiezasNecesarias[4] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                    }
+                    if (piezas.NumeroModelo == 2)
+                    {
+                        if (composicion.NumeroModeloComposicion == 1)
+                        {
+                            cantidadPiezasNecesarias[0] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 2)
+                        {
+                            cantidadPiezasNecesarias[1] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 3)
+                        {
+                            cantidadPiezasNecesarias[2] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 4)
+                        {
+                            cantidadPiezasNecesarias[3] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 5)
+                        {
+                            cantidadPiezasNecesarias[4] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                    }
+                    if (piezas.NumeroModelo == 3)
+                    {
+                        if (composicion.NumeroModeloComposicion == 1)
+                        {
+                            cantidadPiezasNecesarias[0] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 2)
+                        {
+                            cantidadPiezasNecesarias[1] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 3)
+                        {
+                            cantidadPiezasNecesarias[2] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 4)
+                        {
+                            cantidadPiezasNecesarias[3] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 5)
+                        {
+                            cantidadPiezasNecesarias[4] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                    }
+                    if (piezas.NumeroModelo == 4)
+                    {
+                        if (composicion.NumeroModeloComposicion == 1)
+                        {
+                            cantidadPiezasNecesarias[0] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 2)
+                        {
+                            cantidadPiezasNecesarias[1] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 3)
+                        {
+                            cantidadPiezasNecesarias[2] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 4)
+                        {
+                            cantidadPiezasNecesarias[3] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 5)
+                        {
+                            cantidadPiezasNecesarias[4] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                    }
+                    if (piezas.NumeroModelo == 5)
+                    {
+                        if (composicion.NumeroModeloComposicion == 1)
+                        {
+                            cantidadPiezasNecesarias[0] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 2)
+                        {
+                            cantidadPiezasNecesarias[1] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 3)
+                        {
+                            cantidadPiezasNecesarias[2] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 4)
+                        {
+                            cantidadPiezasNecesarias[3] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                        if (composicion.NumeroModeloComposicion == 5)
+                        {
+                            cantidadPiezasNecesarias[4] = piezas.CantidadPedida * composicion.CantidadUsarComposicion;
+                        }
+                    }
+
+                    linea = reader.ReadLine();
+                }
+
+            }
+
+            fs.Close();
+        }
+
+        //Unifica la cantidad del stock inicial
+        public void CantidadStock()
+        {
+            string archivo = "StockPiezas.txt";
+
+            FileStream fs = new FileStream(archivo, FileMode.OpenOrCreate, FileAccess.Read);
+            using (StreamReader reader = new StreamReader(fs))
+            {
+                string? linea = reader.ReadLine();
+
+                while (linea != null)
+                {
+                    EmpresaStockPieza piezas = new EmpresaStockPieza(linea);
+
+                    switch (piezas.NumeroPieza)
+                    {
+                        case 1:
+                            stockInicialPiezas[0] += piezas.StockPieza;
+                            break;
+                        case 2:
+                            stockInicialPiezas[1] += piezas.StockPieza;
+                            break;
+                        case 3:
+                            stockInicialPiezas[2] += piezas.StockPieza;
+                            break;
+                        case 4:
+                            stockInicialPiezas[3] += piezas.StockPieza;
+                            break;
+                        case 5:
+                            stockInicialPiezas[4] += piezas.StockPieza;
+                            break;
+                    }
+
+                    linea = reader.ReadLine();
+                }
+
+            }
+
+            fs.Close();
+        }
+        public void LimpiarReporteVehiculos()
+        {
+            File.Delete(archivoReporteVehiculos);
         }
     }
 }

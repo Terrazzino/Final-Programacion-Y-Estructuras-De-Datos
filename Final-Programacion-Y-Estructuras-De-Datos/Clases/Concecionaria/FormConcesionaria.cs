@@ -26,7 +26,7 @@ namespace tpFinal
 
         private void btnAltaPedidos_Click(object sender, EventArgs e)
         {
-            if (cmbModeloPedidos.Text!=""&&cmbConcesionariaPedidos.Text!=""&&nudCantidadPedidos.Value>0)
+            if (cmbModeloPedidos.Text != "" && cmbConcesionariaPedidos.Text != "" && nudCantidadPedidos.Value > 0)
             {
                 int numeroModelo = Convert.ToInt32(cmbModeloPedidos.Text);
                 int numeroConcesionaria = Convert.ToInt32(cmbConcesionariaPedidos.Text);
@@ -37,7 +37,7 @@ namespace tpFinal
                 gestorConcesionaria.Ordenar();
                 MostrarPedido();
                 seleccionado = -1;
-                
+
             }
             else
             {
@@ -47,12 +47,14 @@ namespace tpFinal
 
         }
 
+        //Metodo llenar grilla
         public void MostrarPedido()
         {
             this.dgvConcesionariaPedidos.DataSource = null;
             this.dgvConcesionariaPedidos.DataSource = gestorConcesionaria.leerConcesionarias();
         }
 
+        //Obtener indice del seleccionado y llenamos los campos
         private void dgvConcesionariaPedidos_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             seleccionado = e.RowIndex;
@@ -62,6 +64,7 @@ namespace tpFinal
             nudCantidadPedidos.Text = dgvConcesionariaPedidos.Rows[seleccionado].Cells[2].Value.ToString();
         }
 
+        //Elimina por seleccionado
         private void btnBajaPedidos_Click_1(object sender, EventArgs e)
         {
             if (seleccionado != -1)
@@ -77,6 +80,7 @@ namespace tpFinal
             }
         }
 
+        //Modifica por seleccionado
         private void btnModificarPeddidos_Click(object sender, EventArgs e)
         {
             if (seleccionado != -1 && cmbModeloPedidos.Text != "" && cmbConcesionariaPedidos.Text != "" && nudCantidadPedidos.Value > 0)

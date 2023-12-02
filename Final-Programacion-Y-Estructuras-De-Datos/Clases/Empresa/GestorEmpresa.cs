@@ -13,7 +13,8 @@ namespace tpFinal.Clases.Empresa
         string archivoPiezas = "StockPiezas.txt";
         string archivoComposicion = "ComposicionVehiculo.txt";
 
-        //COMIENZA GESTOR TERMINADO
+        //***************************************** GESTOR TERMINADO ******************************************
+
         public EmpresaStockTerminado[] leerStockTerminado()
         {
             EmpresaStockTerminado[] lista = new EmpresaStockTerminado[1];
@@ -163,7 +164,8 @@ namespace tpFinal.Clases.Empresa
             }
         }
 
-        //COMIENZA GESTOR PIEZAS
+
+        //**************************************** GESTOR PIEZAS *************************************************
         public EmpresaStockPieza[] leerStockPieza()
         {
             EmpresaStockPieza[] lista = new EmpresaStockPieza[1];
@@ -314,7 +316,7 @@ namespace tpFinal.Clases.Empresa
         }
 
 
-        // Comienzo de composicion vehiculo
+        //*********************************** COMPOSICION VEHICULOS *********************************************
 
         public EmpresaComposicionVehiculos[] leerComposicionVehiculos()
         {
