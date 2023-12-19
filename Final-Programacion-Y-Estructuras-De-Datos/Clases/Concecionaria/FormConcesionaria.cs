@@ -58,10 +58,13 @@ namespace tpFinal
         private void dgvConcesionariaPedidos_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             seleccionado = e.RowIndex;
+            if (seleccionado!=-1)
+            {
+                cmbModeloPedidos.Text = dgvConcesionariaPedidos.Rows[seleccionado].Cells[0].Value.ToString();
+                cmbConcesionariaPedidos.Text = dgvConcesionariaPedidos.Rows[seleccionado].Cells[1].Value.ToString();
+                nudCantidadPedidos.Text = dgvConcesionariaPedidos.Rows[seleccionado].Cells[2].Value.ToString();
+            }
 
-            cmbModeloPedidos.Text = dgvConcesionariaPedidos.Rows[seleccionado].Cells[0].Value.ToString();
-            cmbConcesionariaPedidos.Text = dgvConcesionariaPedidos.Rows[seleccionado].Cells[1].Value.ToString();
-            nudCantidadPedidos.Text = dgvConcesionariaPedidos.Rows[seleccionado].Cells[2].Value.ToString();
         }
 
         //Elimina por seleccionado

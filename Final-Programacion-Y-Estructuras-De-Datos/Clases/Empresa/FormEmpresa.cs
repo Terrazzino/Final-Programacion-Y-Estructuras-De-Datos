@@ -57,9 +57,13 @@ namespace tpFinal
         {
             seleccionadoStockTerminados = e.RowIndex;
 
-            cmbModeloTerminado.Text = dgvTerminadosEmpresa.Rows[seleccionadoStockTerminados].Cells[0].Value.ToString();
-            txtDescripcionTerminado.Text = dgvTerminadosEmpresa.Rows[seleccionadoStockTerminados].Cells[1].Value.ToString();
-            nudStockTerminado.Text = dgvTerminadosEmpresa.Rows[seleccionadoStockTerminados].Cells[2].Value.ToString();
+            if (seleccionadoStockTerminados != -1)
+            {
+                cmbModeloTerminado.Text = dgvTerminadosEmpresa.Rows[seleccionadoStockTerminados].Cells[0].Value.ToString();
+                txtDescripcionTerminado.Text = dgvTerminadosEmpresa.Rows[seleccionadoStockTerminados].Cells[1].Value.ToString();
+                nudStockTerminado.Text = dgvTerminadosEmpresa.Rows[seleccionadoStockTerminados].Cells[2].Value.ToString();
+            }
+
         }
 
         private void btnBajaTerminado_Click(object sender, EventArgs e)
@@ -165,9 +169,13 @@ namespace tpFinal
         {
             seleccionadoStockPiezas = e.RowIndex;
 
-            cmbNumeroPieza.Text = dgvPiezasEmpresa.Rows[seleccionadoStockPiezas].Cells[0].Value.ToString();
-            txtDescripcionPieza.Text = dgvPiezasEmpresa.Rows[seleccionadoStockPiezas].Cells[1].Value.ToString();
-            nudStockPiezas.Text = dgvPiezasEmpresa.Rows[seleccionadoStockPiezas].Cells[2].Value.ToString();
+            if (seleccionadoStockPiezas != -1)
+            {
+                cmbNumeroPieza.Text = dgvPiezasEmpresa.Rows[seleccionadoStockPiezas].Cells[0].Value.ToString();
+                txtDescripcionPieza.Text = dgvPiezasEmpresa.Rows[seleccionadoStockPiezas].Cells[1].Value.ToString();
+                nudStockPiezas.Text = dgvPiezasEmpresa.Rows[seleccionadoStockPiezas].Cells[2].Value.ToString();
+            }
+
         }
 
         //******************************************** COMPOSICION **********************************************
@@ -175,9 +183,12 @@ namespace tpFinal
         {
             seleccionadoComposicion = e.RowIndex;
 
-            cmbModeloComposicion.Text = dgvComposicionEmpresa.Rows[seleccionadoComposicion].Cells[0].Value.ToString();
-            cmbNumPiezasComposición.Text = dgvComposicionEmpresa.Rows[seleccionadoComposicion].Cells[1].Value.ToString();
-            nudCantidadComposicion.Text = dgvComposicionEmpresa.Rows[seleccionadoComposicion].Cells[2].Value.ToString();
+            if (seleccionadoComposicion!=-1)
+            {
+                cmbModeloComposicion.Text = dgvComposicionEmpresa.Rows[seleccionadoComposicion].Cells[0].Value.ToString();
+                cmbNumPiezasComposición.Text = dgvComposicionEmpresa.Rows[seleccionadoComposicion].Cells[1].Value.ToString();
+                nudCantidadComposicion.Text = dgvComposicionEmpresa.Rows[seleccionadoComposicion].Cells[2].Value.ToString();
+            }
         }
 
         private void btnAltaComposicion_Click(object sender, EventArgs e)

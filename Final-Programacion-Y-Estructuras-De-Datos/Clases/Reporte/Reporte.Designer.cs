@@ -64,7 +64,7 @@
             label1.Name = "label1";
             label1.Size = new Size(262, 18);
             label1.TabIndex = 2;
-            label1.Text = "PEDIDOS DE CONSECIONARIA";
+            label1.Text = "PEDIDOS DE CONCESIONARIA";
             // 
             // label2
             // 

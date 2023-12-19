@@ -88,7 +88,7 @@ namespace tpFinal
             //Creamos reportes con el constructor de la clase reporte vehiculos
             for (int i = 0; i < 5; i++)
             {
-                ReporteVehiculos unReporte = new ReporteVehiculos(numeroPieza[i], gestorReportes.cantidadPiezasNecesarias[i], gestorReportes.stockInicialPiezas[i], stockFinalPiezas[i],aComprar[i]);
+                ReporteVehiculos unReporte = new ReporteVehiculos(numeroPieza[i], gestorReportes.cantidadPiezasNecesarias[i], gestorReportes.stockInicialPiezas[i], stockFinalPiezas[i], aComprar[i]);
                 gestorReportes.GuardarReporteVehiculos(unReporte);
             }
             MostrarReporteVehiculos();

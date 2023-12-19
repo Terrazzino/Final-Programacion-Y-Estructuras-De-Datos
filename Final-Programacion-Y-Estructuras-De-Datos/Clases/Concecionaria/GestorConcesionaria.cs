@@ -44,7 +44,7 @@ namespace tpFinal.Clases.Concecionaria
                 var temp = pedidos[i];
                 for (int j = i + 1; j < pedidos.Length; j++)
                 {
-                    if (pedidos[i].NumeroConcecionaria > pedidos[j].NumeroConcecionaria)
+                    if (pedidos[i].NumeroModelo > pedidos[j].NumeroModelo || (pedidos[i].NumeroModelo == pedidos[j].NumeroModelo && pedidos[i].NumeroConcesionaria > pedidos[j].NumeroConcesionaria))
                     {
                         pedidos[i] = pedidos[j];
                         pedidos[j] = temp;
@@ -138,7 +138,7 @@ namespace tpFinal.Clases.Concecionaria
                         {
 
                             unPedido.NumeroModelo = numeroModelo;
-                            unPedido.NumeroConcecionaria = numeroConcesionaria;
+                            unPedido.NumeroConcesionaria = numeroConcesionaria;
                             unPedido.Cantidad = cantidadPedido;
 
 
